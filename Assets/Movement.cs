@@ -45,6 +45,19 @@ public class Movement : MonoBehaviour
 
     private void UpdateMove()
     {
+        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        targetDir.Normalize();
+
+        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
+
+        var trans = this.transform;
+        velocity = (trans.forward * currentDir.y + trans.right * currentDir.x) * speed;
+
+        controller.Move(velocity * Time.deltaTime);
+    }
+
+    private void UpdateMouse()
+    {
         Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
 
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity,
@@ -57,17 +70,5 @@ public class Movement : MonoBehaviour
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
         
         transform.Rotate(Vector3.up * (currentMouseDelta.x * mouseSensitivity));
-    }
-
-    private void UpdateMouse()
-    {
-        Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        targetDir.Normalize();
-
-        currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
-
-        velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * speed;
-
-        controller.Move(velocity * Time.deltaTime);
     }
 }
