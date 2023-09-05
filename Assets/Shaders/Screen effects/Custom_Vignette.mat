@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Custom_VignetteShader
+  m_Name: Custom_Vignette
   m_Shader: {fileID: 4800000, guid: 5a6366e7b2cf3c54ab904fd5f8d7ed12, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -29,9 +29,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _VignettePower: 0.47
-    - _VignetteRadius: 0.378
-    - _VignetteSoftness: 0.457
+    - _VignettePower: 1
     m_Colors:
-    - _VignetteColor: {r: 0, g: 0, b: 0, a: 1}
+    - _VignetteColor: {r: 1, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []

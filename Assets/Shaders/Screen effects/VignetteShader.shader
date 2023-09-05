@@ -1,11 +1,12 @@
-Shader "Custom/VignetteShader" {
+Shader "Custom/Vignette" {
     Properties {
         _MainTex ("Texture", 2D) = "white" {}
-        _VignetteColor ("Vignette Color", Color) = (0, 0, 0, 1)
-        _VignetteRadius ("Vignette Radius", Range(0, 1)) = 0.5
-        _VignetteSoftness ("Vignette Softness", Range(0, 1)) = 0.5
+        _VignetteColor ("Vignette Color", Color) = (0,0,0,1)
+        _VignettePower ("Vignette Power", Range(0.0, 1.0)) = 0.5
     }
     SubShader {
+        
+        Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
         Pass {
             CGPROGRAM
             #pragma vertex vert
@@ -24,9 +25,8 @@ Shader "Custom/VignetteShader" {
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-            fixed4 _VignetteColor;
-            float _VignetteRadius;
-            float _VignetteSoftness;
+            float4 _VignetteColor;
+            float _VignettePower;
 
             v2f vert (appdata v) {
                 v2f o;
@@ -37,9 +37,10 @@ Shader "Custom/VignetteShader" {
 
             fixed4 frag (v2f i) : SV_Target {
                 fixed4 col = tex2D(_MainTex, i.uv);
-                float dist = length(i.uv - 0.5);
-                float vignette = smoothstep(_VignetteRadius, _VignetteRadius - _VignetteSoftness, dist);
-                col.rgb *= lerp(1, _VignetteColor.rgb, vignette);
+                float dist = distance(i.uv, 0.5);
+                col.rgb *= saturate(1.0 - pow(dist * _VignettePower, 2.0));
+                col.rgb += _VignetteColor.rgb * pow(dist, 8.0);
+                col.rgba = float4(0,1,1,1);
                 return col;
             }
             ENDCG
