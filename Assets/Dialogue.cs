@@ -4,25 +4,28 @@ using UnityEngine;
 using UnityEngine.Events;
 using Yarn.Unity;
 
+[RequireComponent(typeof(DialogueRunner))]
 public class Dialogue : MonoBehaviour, IInteractable
 {
 
     [SerializeField] private DialogueRunner dialogue;
+    [SerializeField] private string startNodeName;
 
     private GameObject player;
     public void Interact(GameObject interactor)
     {
         if (dialogue.IsDialogueRunning)
             return;
-        dialogue.StartDialogue("Start");
+        dialogue.StartDialogue(startNodeName);
         player = interactor;
         player.GetComponent<Movement>()?.Paralyse();
     }
-    
+
     [YarnCommand("End")]
     public static void EndDialogue()
     {
         var move = (Movement)FindObjectOfType(typeof(Movement));
         move.Paralyse();
+        
     }
 }
