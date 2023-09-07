@@ -29,7 +29,7 @@ public class InteractWithObjects : MonoBehaviour
 
         if (hit.collider != null && hit.collider.CompareTag("InteractableObject"))
         {
-            hit.collider.GetComponent<IInteractable>().Interact();
+            hit.collider.GetComponent<IInteractable>().Interact(this.gameObject);
         }
     }
 

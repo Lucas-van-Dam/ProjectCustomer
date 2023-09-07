@@ -22,6 +22,8 @@ public class Movement : MonoBehaviour
     private Vector2 currentDir;
     private Vector2 currentDirVelocity;
     private Vector3 velocity;
+
+    private bool recieveInput = true;
     
     
     // Start is called before the first frame update
@@ -39,6 +41,8 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!recieveInput)
+            return;
         UpdateMouse();
         UpdateMove();
     }
@@ -59,7 +63,7 @@ public class Movement : MonoBehaviour
     private void UpdateMouse()
     {
         Vector2 targetMouseDelta = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
-
+        
         currentMouseDelta = Vector2.SmoothDamp(currentMouseDelta, targetMouseDelta, ref currentMouseDeltaVelocity,
             mouseSmoothTime);
 
@@ -70,5 +74,27 @@ public class Movement : MonoBehaviour
         playerCamera.localEulerAngles = Vector3.right * cameraCap;
         
         transform.Rotate(Vector3.up * (currentMouseDelta.x * mouseSensitivity));
+    }
+
+    public void Paralyse()
+    {
+        switch (recieveInput)
+        {
+            case true:
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+
+                recieveInput = false;
+                break;
+            
+            case false:
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+
+                recieveInput = true;
+                break;
+        }
+
+        
     }
 }
