@@ -1,15 +1,50 @@
 ﻿title: StartMom
-position: -374,-18
+position: -509,-81
 ---
-Im a Mom
-<<stop>>
+Distressed Woman: My baby! Where is my baby!
+
+-> What's wrong? 
+    <<jump WhatsWrong>>
+-> Could you get out of the way? I need to get through that door.
+    <<jump DontHaveTime>>
+
 ===
 
-title: StartKid
-position: 25,2
+title: WhatsWrong
+position: -206,-206
 ---
-Im a Kid
-<<stop>>
+
+Distressed Woman: I don't understand... where is my baby? You must find him.
+
+-> Don't worry, I will find your child.
+    <<jump DontWorry>>
+-> I don't have time for this... Now let me through.
+    <<jump DontHaveTime>>
 ===
+title: DontWorry
+position: -67,53
+---
+
+Distressed Woman: Thank you...
+===
+
+title: DontHaveTime
+position: 137,-249
+---
+
+Distressed Woman: *She does not seem to want to leave*
+===
+
+
+
+title: StartKid
+position: 177,-39
+---
+
+Weeping child: 
+===
+
+
+
 
 
