@@ -14,7 +14,7 @@ public class InteractWithObjects : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Interacting();
         }
@@ -24,7 +24,7 @@ public class InteractWithObjects : MonoBehaviour
 
     void Interacting()
     {
-        RaycastHit hit = CastRay(5);
+        RaycastHit hit = CastRay(2);
 
 
         if (hit.collider != null && hit.collider.CompareTag("InteractableObject"))

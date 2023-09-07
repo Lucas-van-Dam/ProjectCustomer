@@ -9,7 +9,7 @@ public class PickUp : MonoBehaviour, IInteractable
     Rigidbody rb;
 
     [SerializeField]
-    float hoverDistance = 5;
+    float hoverDistance = 2;
     [SerializeField]
     float hoverSpeed = 20;
     [SerializeField]
