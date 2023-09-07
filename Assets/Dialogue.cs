@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour, IInteractable
         dialogue.StartDialogue(startNodeName);
         player = interactor;
         player.GetComponent<Movement>()?.Paralyse();
+        dialogue.onDialogueComplete.AddListener(End);
     }
 
     [YarnCommand("End")]
@@ -26,6 +27,13 @@ public class Dialogue : MonoBehaviour, IInteractable
     {
         var move = (Movement)FindObjectOfType(typeof(Movement));
         move.Paralyse();
+        
+    }
+
+    public void End()
+    {
+        Debug.Log("END");
+        player.GetComponent<Movement>()?.Paralyse();
         
     }
 }
