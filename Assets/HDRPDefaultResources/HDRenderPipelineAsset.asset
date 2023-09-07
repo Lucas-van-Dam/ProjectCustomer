@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_RenderPipelineSettings:
     supportShadowMask: 1
-    supportSSR: 0
+    supportSSR: 1
     supportSSRTransparent: 0
     supportSSAO: 1
-    supportSSGI: 0
+    supportSSGI: 1
     supportSubsurfaceScattering: 1
     sssSampleBudget:
       m_Values: 140000002800000050000000
@@ -36,7 +36,7 @@ MonoBehaviour:
     colorBufferFormat: 74
     supportCustomPass: 1
     customBufferFormat: 8
-    supportedLitShaderMode: 2
+    supportedLitShaderMode: 3
     planarReflectionResolution:
       m_Values: 000100000004000000080000
       m_SchemaId:
@@ -49,7 +49,7 @@ MonoBehaviour:
     supportDecalLayers: 0
     supportSurfaceGradient: 1
     decalNormalBufferHP: 0
-    msaaSampleCount: 1
+    msaaSampleCount: 8
     supportMotionVectors: 1
     supportDataDrivenLensFlare: 1
     supportRuntimeAOVAPI: 0
@@ -60,7 +60,7 @@ MonoBehaviour:
     probeVolumeBlendingMemoryBudget: 128
     supportProbeVolumeStreaming: 0
     probeVolumeSHBands: 1
-    supportRayTracing: 0
+    supportRayTracing: 1
     supportedRayTracingMode: 3
     lightLoopSettings:
       cookieAtlasSize: 2048
