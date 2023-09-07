@@ -47,7 +47,7 @@ public class PickUp : MonoBehaviour, IInteractable
     }
 
 
-    public void Interact(GameObject interactor)
+    public void Interact()
     {
         if (!justPutDown)
         {
