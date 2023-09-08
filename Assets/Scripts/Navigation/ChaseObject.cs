@@ -10,6 +10,8 @@ public class ChaseObject : MonoBehaviour
 
     NavMeshAgent agent;
 
+    [SerializeField]
+    float stopDistance = 5;
 
     void Start()
     {
@@ -19,6 +21,11 @@ public class ChaseObject : MonoBehaviour
 
     void Update()
     {
-        agent.destination = target.position;
+        float distToObject = Vector3.Distance(transform.position, target.position);
+
+        if (distToObject > stopDistance)
+            agent.destination = target.position;
+        else
+            agent.destination = transform.position;
     }
 }

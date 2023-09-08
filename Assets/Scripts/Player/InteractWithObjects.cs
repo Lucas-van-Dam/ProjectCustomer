@@ -15,7 +15,7 @@ public class InteractWithObjects : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
             Interacting();
         }
