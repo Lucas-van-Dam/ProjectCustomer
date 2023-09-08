@@ -16,7 +16,7 @@ position: -206,-206
 
 Distressed Woman: I don't understand... where is my baby? You must find him.
 
--> Don't worry, I will find your child.
+-> Alright, I will try find your child.
     <<jump DontWorry>>
 -> I don't have time for this... Now let me through.
     <<jump DontHaveTime>>
@@ -41,11 +41,11 @@ title: StartKid
 position: 177,-39
 ---
 
-Weeping child: *Sniff* mama... *sniff*
+Weeping child: *Sniff* mama...
 
 -> Come with me, I'll bring you back to your mama.
     <<jump ComeWithMe>>
--> Why are you crying? 
+-> What are you hiding out here for?
     <<jump WhyAreYouCrying>>
 
 ===
@@ -68,4 +68,5 @@ position: -418,139
 ---
 
 Weeping child: *Keeps crying*
+
 ===
