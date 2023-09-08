@@ -13,6 +13,8 @@ public class ChaseObject : MonoBehaviour
     [SerializeField]
     float stopDistance = 5;
 
+    public bool isFollowActive = false;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -21,6 +23,9 @@ public class ChaseObject : MonoBehaviour
 
     void Update()
     {
+        if (!isFollowActive)
+            return;
+
         float distToObject = Vector3.Distance(transform.position, target.position);
 
         if (distToObject > stopDistance)

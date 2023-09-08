@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4217540590822466056}
   - component: {fileID: 4936284359792372346}
   - component: {fileID: 4074537727777868930}
+  - component: {fileID: 8417995788582976894}
   m_Layer: 0
   m_Name: FollowAgent
   m_TagString: Untagged
@@ -145,3 +146,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   stopDistance: 5
+  isFollowActive: 0
+--- !u!114 &8417995788582976894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5257485585279930012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f3acd895058674bbdb9a86bcaa4fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
