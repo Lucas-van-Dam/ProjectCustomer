@@ -36,4 +36,10 @@ public class Dialogue : MonoBehaviour, IInteractable
         player.GetComponent<Movement>()?.Paralyse();
         
     }
+
+    [YarnCommand("Dissapear")]
+    public void Dissapear()
+    {
+        Destroy(gameObject);
+    }
 }
