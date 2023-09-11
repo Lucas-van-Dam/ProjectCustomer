@@ -1,7 +1,7 @@
 ﻿title: StartMom
 position: -509,-81
 ---
-My baby! Where is my baby!
+Distressed Woman: My baby! Where is my baby!
 
 -> What's wrong? 
     <<jump WhatsWrong>>
@@ -14,7 +14,7 @@ title: WhatsWrong
 position: -206,-206
 ---
 
-I don't understand... where is my baby? You must find him.
+Distressed Woman: I don't understand... where is my baby? You must find him.
 
 -> Alright, I will try find your child.
     <<jump DontWorry>>
@@ -25,14 +25,14 @@ title: DontWorry
 position: -67,53
 ---
 
-Thank you...
+Distressed Woman: Thank you...
 ===
 
 title: DontHaveTime
 position: 137,-249
 ---
 
-*She does not seem to want to leave*
+Distressed Woman: *She does not seem to want to leave*
 ===
 
 
@@ -41,7 +41,7 @@ title: StartKid
 position: 177,-39
 ---
 
-*Sniff* mama...
+Weeping child: *Sniff* mama...
 
 -> Come with me, I'll bring you back to your mama.
     <<jump ComeWithMe>>
@@ -58,7 +58,7 @@ title: ComeWithMe
 position: -509,-81
 ---
 
-*sniff* ok... *sniff*
+Weeping child: *sniff* ok... *sniff*
 
 <<Dissapear MOTHER>>
 ===
@@ -67,6 +67,6 @@ title: WhyAreYouCrying
 position: -418,139
 ---
 
-*Keeps crying*
+Weeping child: *Keeps crying*
 
 ===
