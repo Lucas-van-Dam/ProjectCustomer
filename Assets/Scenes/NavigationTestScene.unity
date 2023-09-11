@@ -582,6 +582,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FollowAgent
       objectReference: {fileID: 0}
+    - target: {fileID: 5257485585279930012, guid: bbb3addffbe1c5146bb9a3911d866d6c,
+        type: 3}
+      propertyPath: m_TagString
+      value: InteractableObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
