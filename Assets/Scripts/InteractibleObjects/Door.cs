@@ -27,7 +27,6 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Interact(GameObject interactor)
     {
-        Debug.Log("??????");
         if (targetRotation == baseRotation)
             targetRotation = baseRotation + rotationAngle;
         else

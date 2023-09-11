@@ -39,16 +39,7 @@ public class PickUp : MonoBehaviour, IInteractable
                 rb.AddForce(moveDir);
             }
 
-
-            //transform.position = Vector3.Lerp(transform.position, GetHoverTargetPosition(), 0.1f);
-                
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.position - transform.position, Vector3.up), 1);
-
-            //transform.rotation = Quaternion.AngleAxis(Vector3.Angle(player.transform.position, transform.position), Vector3.up);
-
-            //Debug.Log(Quaternion.AngleAxis(Vector3.Angle(player.transform.position, transform.position), Vector3.up));
-
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.E))
             {
                 Drop();
             }

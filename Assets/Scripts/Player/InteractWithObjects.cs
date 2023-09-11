@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InteractWithObjects : MonoBehaviour
 {
     Transform cameraTransform;
-
+    [SerializeField]
+    TextMeshProUGUI interactToolTip;
 
 
     void Start()
@@ -15,23 +17,29 @@ public class InteractWithObjects : MonoBehaviour
 
     void Update()
     {
+        RaycastHit hit = CastRay(2);
+
+        if (hit.collider == null || !hit.collider.CompareTag("InteractableObject"))
+            return;
+
+        IInteractable interactable = hit.collider.GetComponent<IInteractable>();
+
+
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
-            Interacting();
+            Interacting(interactable);
         }
-
     }
 
 
-    void Interacting()
+        
+
+
+    void Interacting(IInteractable interactable)
     {
-        RaycastHit hit = CastRay(2);
 
 
-        if (hit.collider != null && hit.collider.CompareTag("InteractableObject"))
-        {
-            hit.collider.GetComponent<IInteractable>().Interact(this.gameObject);
-        }
+        interactable.Interact(this.gameObject);
     }
 
 

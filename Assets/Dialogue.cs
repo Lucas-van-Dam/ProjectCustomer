@@ -38,7 +38,7 @@ public class Dialogue : MonoBehaviour, IInteractable
     }
 
     [YarnCommand("Dissapear")]
-    public void Dissapear()
+    public virtual void Dissapear()
     {
         Destroy(gameObject);
     }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.0618, g: 2262.2444, b: 3283.3716, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -837,7 +837,9 @@ GameObject:
   - component: {fileID: 303635830}
   - component: {fileID: 303635829}
   - component: {fileID: 303635828}
-  - component: {fileID: 303635827}
+  - component: {fileID: 303635834}
+  - component: {fileID: 303635833}
+  - component: {fileID: 303635835}
   m_Layer: 0
   m_Name: KID
   m_TagString: InteractableObject
@@ -845,20 +847,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &303635827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303635826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22fd27a05401d24498c1e5ace7416d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue: {fileID: 303635828}
-  startNodeName: StartKid
 --- !u!114 &303635828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -986,6 +974,57 @@ Transform:
   - {fileID: 2118251728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &303635833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303635826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ea8a6c3fa1ccd4e8ba319f8918efd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1439036582}
+  stopDistance: 5
+  isFollowActive: 0
+--- !u!114 &303635834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303635826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf64c3f31b76d3b4b909475549f04b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue: {fileID: 303635828}
+  startNodeName: StartKid
+--- !u!195 &303635835
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303635826}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 1
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!64 &308888803
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3351,6 +3390,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cb299d967637824594e30ccea91c6e8, type: 3}
+--- !u!4 &1439036582 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7387790134526789939, guid: 2cb299d967637824594e30ccea91c6e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1439036581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1508019587
 MeshCollider:
   m_ObjectHideFlags: 0
