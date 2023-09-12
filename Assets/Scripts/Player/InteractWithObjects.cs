@@ -31,7 +31,7 @@ public class InteractWithObjects : MonoBehaviour
 
         if (iinteractable != interactable)
         {
-            interactToolTip.text = "lclick/'E' to " + interactable.getToolTipText();
+            interactToolTip.text = "left click/'E' to " + interactable.getToolTipText();
         }
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))

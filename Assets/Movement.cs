@@ -91,6 +91,8 @@ public class Movement : MonoBehaviour
                 Cursor.visible = true;
 
                 recieveInput = false;
+                
+                velocity = Vector3.zero;
                 break;
             
             case false:

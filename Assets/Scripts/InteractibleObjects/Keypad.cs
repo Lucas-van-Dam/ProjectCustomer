@@ -5,6 +5,8 @@ using UnityEngine;
 public class Keypad : MonoBehaviour, IInteractable
 {
     [SerializeField] private string tooltipText;
+    [SerializeField] private Door door;
+    [SerializeField] private GameObject keypadUI;
     
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class Keypad : MonoBehaviour, IInteractable
     public void Interact(GameObject interactor)
     {
         interactor.GetComponent<Movement>().Paralyse();
+        keypadUI.SetActive(true);
     }
 
     public string getToolTipText()

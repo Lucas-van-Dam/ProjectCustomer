@@ -13,20 +13,22 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField]
     float rotationSpeed = 0.9f;
 
+    public bool Locked;
+
     float baseRotation;
     float targetRotation;
 
 
     void Start()
     {
-
-
         baseRotation = hinge.rotation.y;
         targetRotation = baseRotation;
     }
 
     public void Interact(GameObject interactor)
     {
+        if (Locked)
+            return;
         if (targetRotation == baseRotation)
             targetRotation = baseRotation + rotationAngle;
         else
