@@ -55,7 +55,7 @@ public class InteractWithObjects : MonoBehaviour
 
     public RaycastHit CastRay(float maxDistance)
     {
-        Physics.Raycast(transform.position, cameraTransform.forward, out RaycastHit hit, maxDistance);
+        Physics.Raycast(cameraTransform.position, cameraTransform.forward, out RaycastHit hit, maxDistance);
 
         return hit;
     }
