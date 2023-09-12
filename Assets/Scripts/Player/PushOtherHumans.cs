@@ -5,12 +5,11 @@ using UnityEngine;
 public class PushOtherHumans : MonoBehaviour
 {
     [SerializeField]
-    float pushForce;
-
+    float pushForce, pushDistance;
 
     void FixedUpdate()
     {
-        foreach (Collider coll in Physics.OverlapSphere(transform.position, transform.localScale.x * 1.05f))
+        foreach (Collider coll in Physics.OverlapSphere(transform.position, transform.localScale.x * pushDistance))
         {
             if (coll.gameObject.CompareTag("OvercrowdHuman"))
             {

@@ -502,6 +502,7 @@ MonoBehaviour:
   mouseSensitivity: 3.5
   speed: 4
   moveSmoothTime: 0.3
+  footsteps: {fileID: 0}
 --- !u!114 &7578681430909839194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c184b15e26852a04f9d46536e7f2a94b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactToolTip: {fileID: 0}
 --- !u!114 &3603865170155235711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,3 +529,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pushForce: 12
+  pushDistance: 1.05

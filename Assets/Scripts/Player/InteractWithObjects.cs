@@ -9,6 +9,8 @@ public class InteractWithObjects : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI interactToolTip;
 
+    IInteractable iinteractable = null;
+
 
     void Start()
     {
@@ -20,10 +22,17 @@ public class InteractWithObjects : MonoBehaviour
         RaycastHit hit = CastRay(2);
 
         if (hit.collider == null || !hit.collider.CompareTag("InteractableObject"))
+        {
+            interactToolTip.text = "";
             return;
+        }    
 
         IInteractable interactable = hit.collider.GetComponent<IInteractable>();
 
+        if (iinteractable != interactable)
+        {
+            interactToolTip.text = "lclick/'E' to " + interactable.getToolTipText();
+        }
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
         {
@@ -38,6 +47,7 @@ public class InteractWithObjects : MonoBehaviour
     void Interacting(IInteractable interactable)
     {
 
+        interactToolTip.text = "";
 
         interactable.Interact(this.gameObject);
     }

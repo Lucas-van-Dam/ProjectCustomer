@@ -425,6 +425,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -492,6 +497,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -561,6 +571,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -628,6 +643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -697,6 +717,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -764,6 +789,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -901,6 +931,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -969,6 +1004,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1036,6 +1076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1322,6 +1367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1389,6 +1439,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1458,6 +1513,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1526,6 +1586,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1589,6 +1654,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7578681430909839194, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: interactToolTip
+      value: 
+      objectReference: {fileID: 17240516}
     - target: {fileID: 8115021664573574540, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_Name
@@ -1744,6 +1814,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1983,6 +2058,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: OvercrowdHuman (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2050,6 +2130,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2196,6 +2281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: OvercrowdHuman
+      objectReference: {fileID: 0}
+    - target: {fileID: 7880820582372100072, guid: 241ed2586416546409d1a7c92a967557,
+        type: 3}
+      propertyPath: pushDistance
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
