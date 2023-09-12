@@ -4,22 +4,32 @@ using UnityEngine;
 
 public class RotatePuzzlePiece : MonoBehaviour
 {
-    private void OnMouseDrag()
-    {
-        transform.rotation = Quaternion.Euler(Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
+    [SerializeField]
+    static float rotationSpeed = 1;
 
-        //transform.rotation = Quater
-    }
+    bool rotating = false;
+    [SerializeField]
+    bool left;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    Vector2 rotate = Vector2.zero;
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (Input.GetMouseButtonDown(0) && ((Input.mousePosition.x > Screen.width/2 && !left) || (Input.mousePosition.x < Screen.width / 2 && left)))
+        {
+            rotating = true;
+        }
+        else if (Input.GetMouseButtonUp(0))
+        {
+            rotating = false;
+        }
+
+        if (rotating)
+        {
+            rotate = new Vector2(rotate.x + Input.GetAxis("Mouse Y") * rotationSpeed, rotate.y - Input.GetAxis("Mouse X") * rotationSpeed);
+
+            transform.rotation = Quaternion.Euler(rotate.x, rotate.y, 0);
+        }
     }
 }
