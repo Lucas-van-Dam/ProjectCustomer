@@ -24,11 +24,15 @@ public class Movement : MonoBehaviour
     private Vector3 velocity;
 
     private bool recieveInput = true;
+
+    public AudioSource footsteps;
     
     
     // Start is called before the first frame update
     void Start()
     {
+        footsteps = GetComponent<AudioSource>();
+
         controller = GetComponent<CharacterController>();
 
         if (cursorLock)
@@ -45,6 +49,7 @@ public class Movement : MonoBehaviour
             return;
         UpdateMouse();
         UpdateMove();
+        
     }
 
     private void UpdateMove()
@@ -58,6 +63,7 @@ public class Movement : MonoBehaviour
         velocity = (trans.forward * currentDir.y + trans.right * currentDir.x) * speed;
 
         controller.Move(velocity * Time.deltaTime);
+
     }
 
     private void UpdateMouse()
