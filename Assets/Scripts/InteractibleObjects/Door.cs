@@ -36,8 +36,8 @@ public class Door : MonoBehaviour, IInteractable
     void FixedUpdate()
     {
         hinge.rotation = Quaternion.Lerp(hinge.rotation, new Quaternion(0, targetRotation, 0, 1), rotationSpeed);
-        //Debug.Log(hinge.rotation);
-        //Debug.Log(new Quaternion(0, targetRotation, 0, 1));
-        
     }
+
+
+    public string getToolTipText() { return "open/close"; }
 }
