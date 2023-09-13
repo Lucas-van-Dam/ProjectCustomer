@@ -27,7 +27,6 @@ public class Door : MonoBehaviour, IInteractable
 
     public void Interact(GameObject interactor)
     {
-        Debug.Log("??????");
         if (targetRotation == baseRotation)
             targetRotation = baseRotation + rotationAngle;
         else
@@ -40,5 +39,10 @@ public class Door : MonoBehaviour, IInteractable
         //Debug.Log(hinge.rotation);
         //Debug.Log(new Quaternion(0, targetRotation, 0, 1));
         
+    }
+
+    public string getToolTipText()
+    {
+        return "to open/close";
     }
 }

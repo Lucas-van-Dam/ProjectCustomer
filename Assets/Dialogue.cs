@@ -42,4 +42,10 @@ public class Dialogue : MonoBehaviour, IInteractable
     {
         Destroy(gameObject);
     }
+
+
+    public string getToolTipText()
+    {
+        return "to talk";
+    }
 }

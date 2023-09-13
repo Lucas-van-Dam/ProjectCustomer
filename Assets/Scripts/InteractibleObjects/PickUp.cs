@@ -98,4 +98,9 @@ public class PickUp : MonoBehaviour, IInteractable
     {
         return player.transform.position + (cameraTransform.forward * hoverDistance);
     }
+
+    public string getToolTipText()
+    {
+        return "to pickup/drop";
+    }
 }
