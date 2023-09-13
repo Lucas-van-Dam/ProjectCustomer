@@ -101,6 +101,6 @@ public class PickUp : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return "to pickup/drop";
+        return "to pickup/dropa";
     }
 }
