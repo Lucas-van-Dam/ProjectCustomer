@@ -1491,7 +1491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f5352d1b27133c54cbd23c12e5861407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  climbSpeed: 3
 --- !u!1001 &1664855796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1500,6 +1499,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4080932395093656705, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: climbSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7387790134526789939, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_LocalPosition.x
