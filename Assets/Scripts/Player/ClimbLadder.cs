@@ -21,7 +21,7 @@ public class ClimbLadder : MonoBehaviour
     {
         foreach (Collider coll in Physics.OverlapSphere(transform.position, transform.localScale.x * 1.05f))
         {
-            if (coll.GetComponent<Ladder>() != null && coll.GetComponent<Rigidbody>().useGravity == true && Input.GetKey(KeyCode.W))
+            if (coll.GetComponent<Ladder>() != null && coll.GetComponent<Rigidbody>().useGravity == true && coll.GetComponent<Ladder>().canClimb && Input.GetKey(KeyCode.W))
             {
                 movement.gravity = 0;
                 cc.Move(Vector3.up * climbSpeed * Time.deltaTime);
