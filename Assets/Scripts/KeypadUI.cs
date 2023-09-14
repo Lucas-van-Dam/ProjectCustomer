@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,8 +16,12 @@ public class KeypadUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentCombination = new List<char>(4){'a', 'b', 'c', 'd'};
-        KeyPressed("2");
+
+    }
+
+    private void OnEnable()
+    {
+        UpdateScreen();
     }
 
     // Update is called once per frame
