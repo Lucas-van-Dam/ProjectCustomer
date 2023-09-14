@@ -7767,13 +7767,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
+      propertyPath: pitchRange
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
       propertyPath: footstepSource
       value: 
       objectReference: {fileID: 93971938}
     - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: footstepInterval
-      value: 10
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 7387790134526789939, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
