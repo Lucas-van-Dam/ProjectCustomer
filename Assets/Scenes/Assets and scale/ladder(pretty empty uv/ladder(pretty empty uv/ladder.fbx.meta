@@ -3,7 +3,12 @@ guid: dc09cb4bee6522b46807934b8a556b09
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ladder
+    second: {fileID: 2100000, guid: 7a06cc9b28536a14bb395c4b79f977cd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
