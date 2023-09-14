@@ -21,8 +21,6 @@ public class Door : MonoBehaviour, IInteractable
 
     void Start()
     {
-
-
         baseRotation = hinge.rotation.y;
         targetRotation = baseRotation;
     }
@@ -39,10 +37,7 @@ public class Door : MonoBehaviour, IInteractable
 
     void FixedUpdate()
     {
-        hinge.rotation = Quaternion.Lerp(hinge.rotation, new Quaternion(0, targetRotation, 0, 1), rotationSpeed);
-        //Debug.Log(hinge.rotation);
-        //Debug.Log(new Quaternion(0, targetRotation, 0, 1));
-        
+        hinge.rotation = Quaternion.Lerp(hinge.rotation, new Quaternion(0, targetRotation, 0, hinge.rotation.w), rotationSpeed);
     }
 
     public string getToolTipText()

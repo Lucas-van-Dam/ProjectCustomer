@@ -35,9 +35,10 @@ public class PieceHolder : MonoBehaviour
 
     public void Merge()
     {
+        heldPiece.Merge(keyTransform, transform);
+
         transform.rotation = Quaternion.identity;
 
-        heldPiece.transform.parent = keyTransform;
 
         heldPiece = storrage.GetComponentsInChildren<Transform>()[1].GetComponent<PuzzlePiece>();
 

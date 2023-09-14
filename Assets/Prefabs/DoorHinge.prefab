@@ -151,5 +151,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hinge: {fileID: 2220982478244402207}
-  rotationAngle: 0.8
+  rotationAngle: -0.8
   rotationSpeed: 0.05
+  Locked: 0
