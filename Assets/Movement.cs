@@ -26,8 +26,7 @@ public class Movement : MonoBehaviour
     public bool recieveInput = true;
 
 
-    float gravity;
-    public bool isGrav = true;
+    public float gravity;
 
 
     // Start is called before the first frame update
@@ -62,15 +61,11 @@ public class Movement : MonoBehaviour
         velocity = (trans.forward * currentDir.y + trans.right * currentDir.x) * speed;
 
 
-        if (isGrav)
-        {
-            gravity -= 9.81f * Time.deltaTime;
+        gravity -= 9.81f * Time.deltaTime;
 
-            if (controller.isGrounded ) gravity = 0;
+        if (controller.isGrounded ) gravity = 0;
 
-            velocity.y = gravity;
-
-        }
+        velocity.y = gravity;
 
         controller.Move(velocity * Time.deltaTime);
     }
