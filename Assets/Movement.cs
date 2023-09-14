@@ -28,10 +28,19 @@ public class Movement : MonoBehaviour
 
     public float gravity;
 
+    [Header("Footsteps")] 
+    [SerializeField] private float footstepInterval;
+    [SerializeField] private float pitchRange;
+    [SerializeField] private AudioSource footstepSource;
+
+    private float timeBeforeNextFootstep = 0;
+    private float pitch;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        pitch = footstepSource.pitch;
         controller = GetComponent<CharacterController>();
 
         if (cursorLock)
@@ -44,15 +53,32 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (timeBeforeNextFootstep > 0)
+        {
+            timeBeforeNextFootstep -= Time.deltaTime;
+        }
         if (!recieveInput)
             return;
         UpdateMouse();
         UpdateMove();
     }
 
+    private void PlayFootsteps()
+    {
+        footstepSource.pitch = pitch;
+        footstepSource.pitch += Random.Range(-pitchRange, pitchRange);
+        footstepSource.PlayOneShot(footstepSource.clip);
+        timeBeforeNextFootstep = footstepInterval;
+    }
+
     private void UpdateMove()
     {
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        if (targetDir.magnitude > 0 && timeBeforeNextFootstep <= 0)
+        {
+            
+            PlayFootsteps();
+        }
         targetDir.Normalize();
 
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
