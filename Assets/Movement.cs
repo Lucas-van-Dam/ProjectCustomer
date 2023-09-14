@@ -23,7 +23,7 @@ public class Movement : MonoBehaviour
     private Vector2 currentDirVelocity;
     private Vector3 velocity;
 
-    private bool recieveInput = true;
+    public bool recieveInput = true;
 
 
     float gravity;
