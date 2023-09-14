@@ -24,8 +24,12 @@ public class Movement : MonoBehaviour
     private Vector3 velocity;
 
     private bool recieveInput = true;
-    
-    
+
+
+    float gravity;
+    public bool isGrav = true;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,6 +60,17 @@ public class Movement : MonoBehaviour
 
         var trans = this.transform;
         velocity = (trans.forward * currentDir.y + trans.right * currentDir.x) * speed;
+
+
+        if (isGrav)
+        {
+            gravity -= 9.81f * Time.deltaTime;
+
+            if (controller.isGrounded ) gravity = 0;
+
+            velocity.y = gravity;
+
+        }
 
         controller.Move(velocity * Time.deltaTime);
     }
