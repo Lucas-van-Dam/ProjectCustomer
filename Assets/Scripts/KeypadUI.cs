@@ -62,7 +62,7 @@ public class KeypadUI : MonoBehaviour
     private void UpdateScreen()
     {
         var combination = string.Empty;
-        currentCombination.ForEach(x => string.Concat(combination, x));
+        currentCombination.ForEach(x => combination = string.Concat(combination, x.ToString()));
         codeText.text = combination;
     }
 }
