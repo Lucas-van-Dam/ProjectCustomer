@@ -23,12 +23,8 @@ public class ClimbLadder : MonoBehaviour
         {
             if (coll.GetComponent<Ladder>() != null && coll.GetComponent<Rigidbody>().useGravity == true && Input.GetKey(KeyCode.W))
             {
-                movement.isGrav = false;
+                movement.gravity = 0;
                 cc.Move(Vector3.up * climbSpeed * Time.deltaTime);
-            }
-            else
-            {
-                movement.isGrav = true;
             }
         }
     }

@@ -44,10 +44,6 @@ public class InteractWithObjects : MonoBehaviour
         }
     }
 
-
-
-
-
     void Interacting(IInteractable interactable)
     {
 
