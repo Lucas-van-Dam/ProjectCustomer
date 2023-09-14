@@ -19,6 +19,10 @@ public class InteractWithObjects : MonoBehaviour
 
     void Update()
     {
+        if (!GetComponent<Movement>().recieveInput)
+        {
+            return;
+        }
         RaycastHit hit = CastRay(2);
 
         if (hit.collider == null || !hit.collider.CompareTag("InteractableObject"))
