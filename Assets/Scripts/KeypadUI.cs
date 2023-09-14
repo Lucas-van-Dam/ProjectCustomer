@@ -10,24 +10,20 @@ public class KeypadUI : MonoBehaviour
     [SerializeField] private List<char> correctCombination;
     [SerializeField] private Door door;
     [SerializeField] private TextMeshProUGUI codeText;
-    
-    private List<char> currentCombination;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
 
-    }
-
+    private GameObject interactor;
+    
+    private List<char> currentCombination = new List<char>();
+    
     private void OnEnable()
     {
+        
         UpdateScreen();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Enable(GameObject interactor)
     {
-        
+        this.interactor = interactor;
     }
 
     public void KeyPressed(string key)
@@ -43,6 +39,7 @@ public class KeypadUI : MonoBehaviour
         {
             door.Locked = false;
             gameObject.SetActive(false);
+            interactor.GetComponent<Movement>().Paralyse();
         }
         UpdateScreen();
     }
@@ -59,6 +56,7 @@ public class KeypadUI : MonoBehaviour
     public void QuitKey()
     {
         gameObject.SetActive(false);
+        interactor.GetComponent<Movement>().Paralyse();
     }
 
     private void UpdateScreen()

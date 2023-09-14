@@ -24,6 +24,7 @@ public class Keypad : MonoBehaviour, IInteractable
     {
         interactor.GetComponent<Movement>().Paralyse();
         keypadUI.SetActive(true);
+        keypadUI.GetComponent<KeypadUI>().Enable(interactor);
     }
 
     public string getToolTipText()
