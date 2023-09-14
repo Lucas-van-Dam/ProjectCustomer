@@ -75,6 +75,38 @@ title: StartKid2
 position: -697,79
 ---
 
-Ya looking for Timmy? Dunno where he gone. All he do is cry. 
+Ya looking for someone? All I been hearing is this kid crying for his mama all night. 
+
+===
+
+title: StartKid3
+position: -821,-300
+---
+
+...
+
+-> Have you seen a child looking for its mother around here? 
+<<jump SeenAKid>>
+-> Why are you all in these big cages? 
+<<jump BigCages>>
+
+===
+
+title: SeenAKid
+position: -542,-352
+---
+
+Everyone around here hasn't seen their mother since they arrived. I heard one kid never got to the cages though, it's probably hiding in a corner somewhere. Won't take long before the stray gets found.
+
+
+===
+
+title: BigCages
+position: -898,-63
+---
+
+This is where we stay. 
+
+<<jump StartKid3>>
 
 ===

@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: 341442d7c9b20a44a9d90a0841a5c0d8
+guid: 39107703e651afa4da39615c12ff9fac
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Feed_and_Hay
-    second: {fileID: 2100000, guid: 81a6d506660cba14198be99a94a281f1, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
