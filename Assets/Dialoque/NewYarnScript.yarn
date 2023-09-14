@@ -80,7 +80,7 @@ Ya looking for someone? All I been hearing is this kid crying for his mama all n
 ===
 
 title: StartKid3
-position: -821,-300
+position: -838,-414
 ---
 
 ...
@@ -108,5 +108,12 @@ position: -898,-63
 This is where we stay. 
 
 <<jump StartKid3>>
+
+===
+title: StartAdult1
+position: -489,-61
+---
+
+4... 9... 1... 3...
 
 ===
