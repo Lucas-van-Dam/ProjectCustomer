@@ -742,6 +742,8 @@ MonoBehaviour:
   mouseSensitivity: 3.5
   speed: 4
   moveSmoothTime: 0.3
+  recieveInput: 1
+  gravity: 0
 --- !u!114 &7578681430909839194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,4 +782,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f31d5572c8110bd42845caf10d361fdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  climbSpeed: 3
+  climbSpeed: 4
