@@ -123,6 +123,74 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &54976172
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 22.504326
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.594
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.8816316
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7114491
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7027377
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 89.294
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: fdabd19d89f360e47b1e60beea8e0d00,
+        type: 3}
+      propertyPath: m_Name
+      value: branding chair correct size1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fdabd19d89f360e47b1e60beea8e0d00, type: 3}
 --- !u!1001 &101431610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1293,3 +1361,4 @@ SceneRoots:
   - {fileID: 1318165365}
   - {fileID: 1594479464}
   - {fileID: 1004922348}
+  - {fileID: 54976172}
