@@ -21,6 +21,6 @@ public class Dialogue : MonoBehaviour, IInteractable
     
     public string getToolTipText()
     {
-        return "to talk";
+        return "Press E/left click to talk";
     }
 }
