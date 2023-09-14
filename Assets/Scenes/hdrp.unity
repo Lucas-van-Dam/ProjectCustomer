@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2185.4875, g: 2335.1565, b: 3519.2622, a: 1}
+  m_IndirectSpecularColor: {r: 2156.9817, g: 2260.4358, b: 3282.067, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -896,7 +896,6 @@ GameObject:
   - component: {fileID: 180089001}
   - component: {fileID: 180089000}
   - component: {fileID: 180088999}
-  - component: {fileID: 180089004}
   - component: {fileID: 180089003}
   m_Layer: 0
   m_Name: MOTHER
@@ -1006,46 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fd27a05401d24498c1e5ace7416d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 180089004}
   startNodeName: StartMom
---- !u!114 &180089004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180088998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 461091129d95e0e40999fc9f7afd36f7,
-    type: 3}
-  _variableStorage: {fileID: 1562595588}
-  dialogueViews:
-  - {fileID: 1981901423}
-  - {fileID: 385646443}
-  startNode: Start
-  startAutomatically: 0
-  runSelectedOptionAsLine: 0
-  lineProvider: {fileID: 1562595590}
-  verboseLogging: 1
-  onNodeStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onCommand:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &195057611
 GameObject:
   m_ObjectHideFlags: 0
@@ -1571,7 +1531,6 @@ GameObject:
   - component: {fileID: 303635831}
   - component: {fileID: 303635830}
   - component: {fileID: 303635829}
-  - component: {fileID: 303635828}
   - component: {fileID: 303635827}
   m_Layer: 0
   m_Name: KID
@@ -1592,46 +1551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fd27a05401d24498c1e5ace7416d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 303635828}
   startNodeName: StartKid
---- !u!114 &303635828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303635826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 461091129d95e0e40999fc9f7afd36f7,
-    type: 3}
-  _variableStorage: {fileID: 1562595588}
-  dialogueViews:
-  - {fileID: 762797976}
-  - {fileID: 318921039}
-  startNode: Start
-  startAutomatically: 0
-  runSelectedOptionAsLine: 0
-  lineProvider: {fileID: 1562595590}
-  verboseLogging: 1
-  onNodeStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onCommand:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!136 &303635829
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1749,18 +1669,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 2968193}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &318921039 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6323935187928403899, guid: 638e885a48f1a46c29aaa1b64688b208,
-    type: 3}
-  m_PrefabInstance: {fileID: 2968193}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac0c40fc910845709d9cef7c876cb99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &324151103
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2375,18 +2283,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 3680687292192122401, guid: e8b3f77d9df046147ac7c4400a7a2bdb, type: 3}
---- !u!114 &385646443 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3292657645895612466, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
-    type: 3}
-  m_PrefabInstance: {fileID: 582881130}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac0c40fc910845709d9cef7c876cb99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &391512519
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,6 +3479,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue System
       objectReference: {fileID: 0}
+    - target: {fileID: 2753718018764665327, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
+        type: 3}
+      propertyPath: m_TagString
+      value: DialogueSystem
+      objectReference: {fileID: 0}
     - target: {fileID: 3183266951831634833, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3671,6 +3572,22 @@ PrefabInstance:
     - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
+        type: 3}
+      propertyPath: yarnProject
+      value: 
+      objectReference: {fileID: 7545569452688597077, guid: 461091129d95e0e40999fc9f7afd36f7,
+        type: 3}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
+        type: 3}
+      propertyPath: lineProvider
+      value: 
+      objectReference: {fileID: 1562595590}
+    - target: {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
+        type: 3}
+      propertyPath: startAutomatically
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3831113771892455813, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
@@ -3823,8 +3740,7 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3579681405068720530, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7084386685998634907, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
@@ -3840,6 +3756,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1562595590}
+    - targetCorrespondingSourceObject: {fileID: 2753718018764665327, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1562595593}
   m_SourcePrefab: {fileID: 100100000, guid: 7f29e5f7ffdea4a6793cefb278b61f0c, type: 3}
 --- !u!1 &588633053
 GameObject:
@@ -4480,18 +4400,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 855712104}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &762797976 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4935123090281167014, guid: 67dde1b92175d4745aaea386e7555d40,
-    type: 3}
-  m_PrefabInstance: {fileID: 855712104}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &764452121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -7941,7 +7849,6 @@ GameObject:
   - component: {fileID: 1557740463}
   - component: {fileID: 1557740462}
   - component: {fileID: 1557740461}
-  - component: {fileID: 1557740460}
   - component: {fileID: 1557740459}
   m_Layer: 0
   m_Name: KID 2
@@ -7962,46 +7869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22fd27a05401d24498c1e5ace7416d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 1557740460}
   startNodeName: StartKid2
---- !u!114 &1557740460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557740458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  yarnProject: {fileID: 7545569452688597077, guid: 461091129d95e0e40999fc9f7afd36f7,
-    type: 3}
-  _variableStorage: {fileID: 1562595588}
-  dialogueViews:
-  - {fileID: 762797976}
-  - {fileID: 318921039}
-  startNode: Start
-  startAutomatically: 0
-  runSelectedOptionAsLine: 0
-  lineProvider: {fileID: 1562595590}
-  verboseLogging: 1
-  onNodeStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onNodeComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueStart:
-    m_PersistentCalls:
-      m_Calls: []
-  onDialogueComplete:
-    m_PersistentCalls:
-      m_Calls: []
-  onCommand:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!136 &1557740461
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -8096,18 +7964,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 582881130}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1562595588 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3831113771892455813, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
-    type: 3}
-  m_PrefabInstance: {fileID: 582881130}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1562595587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 610c541718d694070a21327d1ae62e75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1562595590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8121,6 +7977,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textLanguageCode: en-US
+--- !u!114 &1562595593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562595587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a510e7438dade8418ba9894d576c327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1568318204
 GameObject:
   m_ObjectHideFlags: 0
@@ -10287,18 +10155,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1977923126}
   m_CullTransparentMesh: 1
---- !u!114 &1981901423 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7778558435068644806, guid: 7f29e5f7ffdea4a6793cefb278b61f0c,
-    type: 3}
-  m_PrefabInstance: {fileID: 582881130}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddcdd604a328c4ab296f048eb7b3a925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2003399636
 PrefabInstance:
   m_ObjectHideFlags: 0

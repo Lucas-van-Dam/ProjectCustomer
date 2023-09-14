@@ -6,6 +6,7 @@ TagManager:
   tags:
   - InteractableObject
   - OvercrowdHuman
+  - DialogueSystem
   layers:
   - Default
   - TransparentFX
