@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class Ladder : MonoBehaviour
 {
+    public bool canClimb = false;
 }
