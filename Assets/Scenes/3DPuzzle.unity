@@ -304,9 +304,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: 0.08
+  precision: {x: 0.15, y: 0.15, z: 0}
   keyRotation: {x: -0.5, y: -0.5, z: 0}
   thisRotation: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 1.5, z: 0}
 --- !u!1 &485023938
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,9 +988,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: 15
+  precision: {x: 0, y: 0, z: 0}
   keyRotation: {x: 0, y: 0, z: 0}
   thisRotation: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!135 &1091459817
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1108,9 +1110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: 15
+  precision: {x: 0, y: 0, z: 0}
   keyRotation: {x: 0, y: 0, z: 0}
   thisRotation: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!65 &1375186550
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1263,9 +1266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: 15
+  precision: {x: 0, y: 0, z: 0}
   keyRotation: {x: 0, y: 0, z: 0}
   thisRotation: {x: 0, y: 0, z: 0}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!136 &1676941714
 CapsuleCollider:
   m_ObjectHideFlags: 0
