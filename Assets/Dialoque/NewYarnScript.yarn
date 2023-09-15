@@ -1,13 +1,16 @@
-﻿title: StartMom
+﻿
+
+title: StartMom
 position: -509,-81
 ---
+<<declare $talkToMother = false >>
+
 My baby! Where is my baby!
 
 -> What's wrong? 
     <<jump WhatsWrong>>
 -> Could you get out of the way? I need to get through that door.
     <<jump DontHaveTime>>
-
 ===
 
 title: WhatsWrong
@@ -25,6 +28,7 @@ title: DontWorry
 position: -67,53
 ---
 
+<<set $talkToMother = true>>
 Thank you...
 ===
 
@@ -33,6 +37,7 @@ position: 137,-249
 ---
 
 *She does not seem to want to leave*
+<<set $talkToMother = true>>
 ===
 
 
@@ -43,7 +48,8 @@ position: 177,-39
 
 *Sniff* mama...
 
--> Come with me, I'll bring you back to your mama.
+
+-> Come with me, I'll bring you back to your mama. <<if $talkToMother == true>>
     <<jump ComeWithMe>>
 -> What are you hiding out here for?
     <<jump WhyAreYouCrying>>
@@ -85,7 +91,7 @@ position: -838,-414
 
 ...
 
--> Have you seen a child looking for its mother around here? 
+-> Have you seen a child looking for its mother around here? <<if $talkToMother == true>>
     <<jump SeenAKid>>
 -> Why are you all in these big cages? 
     <<jump BigCages>>
@@ -107,7 +113,6 @@ position: -898,-63
 
 This is where we stay. 
 
-    <<jump StartKid3>>
 
 ===
 title: StartAdult1
