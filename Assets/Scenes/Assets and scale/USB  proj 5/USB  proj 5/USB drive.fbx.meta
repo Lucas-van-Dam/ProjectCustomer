@@ -3,7 +3,12 @@ guid: cb3d356eb1bb1bc4f84e174646d323dc
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: usb_stick
+    second: {fileID: 2100000, guid: 4931b500fea95cf41a54a38214d644f2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
