@@ -29,6 +29,6 @@ public class Keypad : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return tooltipText;
+        return "Press E/left click to open keypad";
     }
 }

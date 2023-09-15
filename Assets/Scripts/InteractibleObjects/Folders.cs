@@ -16,6 +16,6 @@ public class Folders : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return "inspect";
+        return "Press E/left click to inspect";
     }
 }

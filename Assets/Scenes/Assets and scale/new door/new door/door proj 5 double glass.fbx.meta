@@ -1,19 +1,9 @@
 fileFormatVersion: 2
-guid: 076a05726ca396f4199abbb65eea28d7
+guid: 5aec8c0c56b672b43bca0df273ad82eb
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Door_Metal
-    second: {fileID: 2100000, guid: d07b370f7f852ef42b9dd43510821a4e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Glass1
-    second: {fileID: 2100000, guid: 713bd38e036fb4747acc9b0241a13b1e, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

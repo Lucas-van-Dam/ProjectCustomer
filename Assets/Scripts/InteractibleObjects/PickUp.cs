@@ -38,8 +38,9 @@ public class PickUp : MonoBehaviour, IInteractable
 
                 rb.AddForce(moveDir);
             }
-
-
+            
+            transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
+            
             //transform.position = Vector3.Lerp(transform.position, GetHoverTargetPosition(), 0.1f);
                 
             //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.position - transform.position, Vector3.up), 1);
@@ -101,6 +102,6 @@ public class PickUp : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return "to pickup/dropa";
+        return "Press E/left click to pickup/dropa";
     }
 }

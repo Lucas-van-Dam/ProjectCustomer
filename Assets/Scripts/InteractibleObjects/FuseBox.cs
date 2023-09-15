@@ -14,6 +14,6 @@ public class FuseBox : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return " to unlock door";
+        return "Press E/left click to unlock door";
     }
 }

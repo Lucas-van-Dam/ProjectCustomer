@@ -72,9 +72,147 @@ position: -418,139
 ===
 
 title: StartKid2
-position: -697,79
+position: -686,111
 ---
 
-Ya looking for Timmy? Dunno where he gone. All he do is cry. 
+Ya looking for someone? All I been hearing is this kid crying for his mama all night. 
+
+===
+
+title: StartKid3
+position: -838,-414
+---
+
+...
+
+-> Have you seen a child looking for its mother around here? 
+    <<jump SeenAKid>>
+-> Why are you all in these big cages? 
+    <<jump BigCages>>
+
+===
+
+title: SeenAKid
+position: -542,-352
+---
+
+Everyone around here hasn't seen their mother since they arrived. I heard one kid never got to the cages though, it's probably hiding in a corner somewhere. Won't take long before the stray gets found.
+
+
+===
+
+title: BigCages
+position: -898,-63
+---
+
+This is where we stay. 
+
+    <<jump StartKid3>>
+
+===
+title: StartAdult1
+position: -920,331
+---
+
+4... 9... 1... 3...
+
+===
+title: StartAdult2
+position: -676,331
+---
+
+You're... out of your cage... you should not... 
+
+    -> Why shouldn't I? 
+
+...
+
+===
+
+
+title: StartAdult3
+position: -457,333
+---
+
+Hey, you're awake.
+
+-> What am I doing here? Why are we in this cage?
+
+I don't know any better than you. All I know is we're stuck in here. 
+
+-> I don't understand... 
+    <<jump DontUnderstand>>
+-> How do I get out of here? 
+    <<jump GetOutOfHere>>
+
+===
+
+
+title: DontUnderstand
+position: -451,473
+---
+
+Neither do I, but that's just how it goes now...
+
+===
+title: GetOutOfHere
+position: -450,616
+---
+
+If I knew that, I wouldn't be here talking to you, would I?
+
+===
+
+
+title: StartBurntMan1
+position: -21,342
+---
+
+It... Hurts...
+
+===
+title: StartBurntMan2
+position: 220,345
+---
+
+It doesn't make sense... 
+
+-> What doesn't make sense? 
+    <<jump WhatSense>>
+-> Do you know where we are? 
+    <<jump WhereAreWe>>
+
+===
+
+title: WhatSense
+position: 221,499
+---
+
+The symbols... it must be a code... 
+
+===
+
+
+title: WhereAreWe
+position: 460,494
+---
+
+...
+
+===
+
+title: StartBurntMan3
+position: 452,343
+---
+
+The key... agh... that folder... burn... agh... 
+
+===
+
+title: StartBurntMan4
+position: 689,342
+---
+
+You're out of you cage...? It's pointless. There is no way out. 
 
 ===

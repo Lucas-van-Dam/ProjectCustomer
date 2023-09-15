@@ -42,6 +42,6 @@ public class Door : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return "to open/close";
+        return Locked ? "The door is locked" : "Press E/left click to open/close";
     }
 }
