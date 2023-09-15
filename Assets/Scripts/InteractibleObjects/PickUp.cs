@@ -30,6 +30,14 @@ public class PickUp : MonoBehaviour, IInteractable
 
     void Update()
     {
+        if (Input.GetMouseButtonDown(0) && isBeingHeld)
+        {
+            Drop();
+        }
+    }
+
+    void FixedUpdate()
+    {
         if (isBeingHeld)
         {
             if (Vector3.Distance(transform.position, GetHoverTargetPosition()) > 0.5f)
@@ -38,21 +46,8 @@ public class PickUp : MonoBehaviour, IInteractable
 
                 rb.AddForce(moveDir);
             }
-            
+
             transform.LookAt(new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z));
-            
-            //transform.position = Vector3.Lerp(transform.position, GetHoverTargetPosition(), 0.1f);
-                
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(cameraTransform.position - transform.position, Vector3.up), 1);
-
-            //transform.rotation = Quaternion.AngleAxis(Vector3.Angle(player.transform.position, transform.position), Vector3.up);
-
-            //Debug.Log(Quaternion.AngleAxis(Vector3.Angle(player.transform.position, transform.position), Vector3.up));
-
-            if (Input.GetMouseButtonDown(0))
-            {
-                Drop();
-            }
         }
     }
 

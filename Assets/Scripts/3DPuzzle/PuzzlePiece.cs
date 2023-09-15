@@ -5,7 +5,7 @@ using UnityEngine;
 public class PuzzlePiece : MonoBehaviour
 {
     [SerializeField]
-    Vector3 precision, keyRotation, thisRotation, offset;
+    Vector3 precision, keyRotation, thisRotation, offset, offsetRotation;
 
 
 
@@ -19,21 +19,26 @@ public class PuzzlePiece : MonoBehaviour
 
     public bool isKeyRotationCorrect(Transform keyTransform)
     {
-        return (keyTransform.rotation.x > keyRotation.x - precision.x && keyTransform.rotation.x < keyRotation.x + precision.x && keyTransform.rotation.y > keyRotation.y - precision.y && keyTransform.rotation.y < keyRotation.y + precision.y);
+
+        return (keyTransform.rotation.x > keyRotation.x - precision.x && keyTransform.rotation.x < keyRotation.x + precision.x && keyTransform.rotation.y > keyRotation.y - precision.y && keyTransform.rotation.y < keyRotation.y + precision.y) || (-keyTransform.rotation.x > keyRotation.x - precision.x && -keyTransform.rotation.x < keyRotation.x + precision.x && -keyTransform.rotation.y > keyRotation.y - precision.y && -keyTransform.rotation.y < keyRotation.y + precision.y);
     }
 
     public bool isPieceRotationCorrect()
     {
-        return (transform.rotation.x > thisRotation.x - precision.x && transform.rotation.x < thisRotation.x + precision.x && transform.rotation.y > thisRotation.y - precision.y && transform.rotation.y < thisRotation.y + precision.y);
+        return (transform.parent.rotation.x > thisRotation.x - precision.x && transform.parent.rotation.x < thisRotation.x + precision.x && transform.parent.rotation.y > thisRotation.y - precision.y && transform.parent.rotation.y < thisRotation.y + precision.y) || (-transform.parent.rotation.x > thisRotation.x - precision.x && -transform.parent.rotation.x < thisRotation.x + precision.x && -transform.parent.rotation.y > thisRotation.y - precision.y && -transform.parent.rotation.y < thisRotation.y + precision.y);
     }
     
     public void Merge(Transform keyTransform, Transform holderTransform)
     {
-        targetPos = offset;
-
         transform.parent = keyTransform;
 
-        transform.rotation = new Quaternion(holderTransform.rotation.x, holderTransform.rotation.y, holderTransform.rotation.z, 1);
+        targetPos = offset;
+
+        //transform.rotation = new Quaternion(-90, 0, 0, 1);
+
+        //keyTransform.rotation = new Quaternion(keyRotation.x, keyRotation.y, keyRotation.z, 1);
+
+        //transform.rotation = new Quaternion(holderTransform.rotation.x + transform.rotation.x, holderTransform.rotation.y + transform.rotation.y, holderTransform.rotation.z + transform.rotation.z, 1);
 
     }
 

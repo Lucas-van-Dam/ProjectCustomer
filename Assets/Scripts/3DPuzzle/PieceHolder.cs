@@ -18,7 +18,7 @@ public class PieceHolder : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(keyTransform.rotation.x + " " + keyTransform.rotation.y);
+        Debug.Log(transform.rotation.x + " " + transform.rotation.y + " " + transform.rotation.z);
 
         if (heldPiece.isKeyRotationCorrect(keyTransform) && heldPiece.isPieceRotationCorrect())
         {
@@ -37,8 +37,8 @@ public class PieceHolder : MonoBehaviour
     {
         heldPiece.Merge(keyTransform, transform);
 
-        transform.rotation = Quaternion.identity;
 
+        transform.rotation = Quaternion.identity;
 
         heldPiece = storrage.GetComponentsInChildren<Transform>()[1].GetComponent<PuzzlePiece>();
 

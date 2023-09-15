@@ -147,9 +147,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89e0c0bd837d76439dff1e1db6ba55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverDistance: 6
-  hoverSpeed: 75
-  hoverDrag: 10
+  hoverDistance: 5
+  hoverSpeed: 100
+  hoverDrag: 5
 --- !u!114 &6562260904486307012
 MonoBehaviour:
   m_ObjectHideFlags: 0
