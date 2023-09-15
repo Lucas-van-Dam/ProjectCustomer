@@ -86,9 +86,9 @@ position: -838,-414
 ...
 
 -> Have you seen a child looking for its mother around here? 
-<<jump SeenAKid>>
+    <<jump SeenAKid>>
 -> Why are you all in these big cages? 
-<<jump BigCages>>
+    <<jump BigCages>>
 
 ===
 
@@ -107,7 +107,7 @@ position: -898,-63
 
 This is where we stay. 
 
-<<jump StartKid3>>
+    <<jump StartKid3>>
 
 ===
 title: StartAdult1
@@ -123,7 +123,7 @@ position: -676,331
 
 You're... out of your cage... you should not... 
 
--> Why shouldn't I? 
+    -> Why shouldn't I? 
 
 ...
 
@@ -141,9 +141,9 @@ Hey, you're awake.
 I don't know any better than you. All I know is we're stuck in here. 
 
 -> I don't understand... 
-<<jump DontUnderstand>>
+    <<jump DontUnderstand>>
 -> How do I get out of here? 
-<<jump GetOutOfHere>>
+    <<jump GetOutOfHere>>
 
 ===
 
@@ -178,9 +178,9 @@ position: 220,345
 It doesn't make sense... 
 
 -> What doesn't make sense? 
-<<jump WhatSense>>
+    <<jump WhatSense>>
 -> Do you know where we are? 
-<<jump WhereAreWe>>
+    <<jump WhereAreWe>>
 
 ===
 
