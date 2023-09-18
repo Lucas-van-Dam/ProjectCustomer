@@ -97,6 +97,6 @@ public class PickUp : MonoBehaviour, IInteractable
 
     public string getToolTipText()
     {
-        return "Press E/left click to pickup/dropa";
+        return "Press E/left click to pickup/drop";
     }
 }

@@ -13,6 +13,7 @@ public class MergeButton : MonoBehaviour
     Button button;
 
 
+
     private void Start()
     {
         buttonText = GetComponentInChildren<TextMeshProUGUI>();
@@ -29,7 +30,16 @@ public class MergeButton : MonoBehaviour
 
     public void CannotMerge()
     {
-        buttonText.text = inactiveText;
-        button.interactable = false;
+        if (buttonText != null)
+        {
+            buttonText.text = inactiveText;
+            button.interactable = false;
+        }
+    }
+
+    public void Finish()
+    {
+        buttonText.text = "Unlock Door";
+        button.interactable = true;
     }
 }

@@ -13,9 +13,13 @@ public class RotatePuzzlePiece : MonoBehaviour
 
     Vector2 rotate = Vector2.zero;
 
+    public bool activated = false;
 
     void Update()
     {
+        if (!activated)
+            return;
+
         if (Input.GetMouseButtonDown(0) && ((Input.mousePosition.x > Screen.width/2 && !left) || (Input.mousePosition.x < Screen.width / 2 && left)))
         {
             rotating = true;

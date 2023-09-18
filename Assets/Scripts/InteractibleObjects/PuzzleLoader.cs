@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class PuzzleLoader : MonoBehaviour, IInteractable
+{
+    [SerializeField]
+    private KeyPuzzleManager puzzleManager;
+
+    private int piecesToCollect = 0;
+
+    public void Interact(GameObject interactor)
+    {
+        if (puzzleManager.finished)
+            return;
+
+        if (piecesToCollect > 0)
+            return;
+
+        puzzleManager.Activate();
+    }
+
+    void OnPieceCollected()
+    {
+        piecesToCollect--;
+    }
+
+    public string getToolTipText()
+    {
+        if (puzzleManager.finished)
+            return "";
+
+        if (piecesToCollect > 0)
+            return "missing " + piecesToCollect + " key pieces";
+        return "Press E/left click to assemble key";
+    }
+}

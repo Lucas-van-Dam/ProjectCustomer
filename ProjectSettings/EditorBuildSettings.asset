@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/hdrp.unity
     guid: 78e6f4d27b3f2a34aa27a359bc1b18fc
+  - enabled: 1
+    path: Assets/Scenes/3DPuzzle.unity
+    guid: b446f9097ac9bbc46a5fedd5205bbb3b
   m_configObjects: {}

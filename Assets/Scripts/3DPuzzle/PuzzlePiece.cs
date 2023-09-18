@@ -8,18 +8,24 @@ public class PuzzlePiece : MonoBehaviour
     Vector3 precision, keyRotation, thisRotation, offset, offsetRotation;
 
 
-
+    Quaternion targetRotation;
     Vector3 targetPos = Vector3.zero;
+
+
+    private void Start()
+    {
+        targetRotation = transform.localRotation;
+    }
 
     void Update()
     {
         transform.localPosition = Vector3.Lerp(transform.localPosition, targetPos, 0.02f);
+        transform.localRotation = Quaternion.Lerp(transform.localRotation, targetRotation, 0.02f);
     }
 
 
     public bool isKeyRotationCorrect(Transform keyTransform)
     {
-
         return (keyTransform.rotation.x > keyRotation.x - precision.x && keyTransform.rotation.x < keyRotation.x + precision.x && keyTransform.rotation.y > keyRotation.y - precision.y && keyTransform.rotation.y < keyRotation.y + precision.y) || (-keyTransform.rotation.x > keyRotation.x - precision.x && -keyTransform.rotation.x < keyRotation.x + precision.x && -keyTransform.rotation.y > keyRotation.y - precision.y && -keyTransform.rotation.y < keyRotation.y + precision.y);
     }
 
@@ -30,16 +36,18 @@ public class PuzzlePiece : MonoBehaviour
     
     public void Merge(Transform keyTransform, Transform holderTransform)
     {
+        targetRotation = Quaternion.Euler(offsetRotation);
+
         transform.parent = keyTransform;
 
         targetPos = offset;
 
-        //transform.rotation = new Quaternion(-90, 0, 0, 1);
+        
+        //transform.localRotation = new Quaternion(-90, 0, 0, 1);
 
         //keyTransform.rotation = new Quaternion(keyRotation.x, keyRotation.y, keyRotation.z, 1);
 
         //transform.rotation = new Quaternion(holderTransform.rotation.x + transform.rotation.x, holderTransform.rotation.y + transform.rotation.y, holderTransform.rotation.z + transform.rotation.z, 1);
-
     }
 
 }

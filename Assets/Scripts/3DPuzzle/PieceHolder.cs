@@ -16,11 +16,19 @@ public class PieceHolder : MonoBehaviour
     [SerializeField]
     GameObject storrage;
 
+    public bool puzzleDone = false;
+
     private void Update()
     {
-        Debug.Log(transform.rotation.x + " " + transform.rotation.y + " " + transform.rotation.z);
+        //Debug.Log(transform.rotation.x + " " + transform.rotation.y + " " + transform.rotation.z);
 
-        if (heldPiece.isKeyRotationCorrect(keyTransform) && heldPiece.isPieceRotationCorrect())
+        
+
+        if (puzzleDone)
+        {
+            mergeButton.Finish();
+        }
+        else if (heldPiece.isKeyRotationCorrect(keyTransform) && heldPiece.isPieceRotationCorrect())
         {
             mergeButton.CanMerge();
         }
@@ -28,17 +36,24 @@ public class PieceHolder : MonoBehaviour
         {
             mergeButton.CannotMerge();
         }
-
     }
 
     
 
     public void Merge()
     {
+        if (puzzleDone)
+            return;
+        
         heldPiece.Merge(keyTransform, transform);
 
-
         transform.rotation = Quaternion.identity;
+
+        if (storrage.GetComponentsInChildren<Transform>().Length == 1)
+        {
+            puzzleDone = true;
+            return;
+        }
 
         heldPiece = storrage.GetComponentsInChildren<Transform>()[1].GetComponent<PuzzlePiece>();
 
