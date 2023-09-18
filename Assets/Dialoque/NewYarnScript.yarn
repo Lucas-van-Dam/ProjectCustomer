@@ -53,7 +53,8 @@ position: 177,-39
     <<jump ComeWithMe>>
 -> What are you hiding out here for?
     <<jump WhyAreYouCrying>>
-
+-> Are you looking for your mom? <<if $talkToMother neq true>>
+    <<jump LookingForMom>>
 ===
 
 
@@ -68,6 +69,14 @@ position: -509,-81
 
 <<Dissapear MOTHER>>
 ===
+
+title: LookingForMom
+position: -509,-81
+---
+
+Yes... 
+===
+
 
 title: WhyAreYouCrying
 position: -418,139
