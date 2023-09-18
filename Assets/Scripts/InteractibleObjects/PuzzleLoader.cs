@@ -8,7 +8,7 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
     [SerializeField]
     private KeyPuzzleManager puzzleManager;
 
-    private int piecesToCollect = 0;
+    private int piecesToCollect = 3;
 
     public void Interact(GameObject interactor)
     {
@@ -21,7 +21,7 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
         puzzleManager.Activate();
     }
 
-    void OnPieceCollected()
+    public void OnPieceCollected()
     {
         piecesToCollect--;
     }
