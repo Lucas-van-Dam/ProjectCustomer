@@ -150,6 +150,7 @@ MonoBehaviour:
   hoverDistance: 5
   hoverSpeed: 100
   hoverDrag: 5
+  hoverOffset: {x: 0, y: 2, z: 0}
 --- !u!114 &6562260904486307012
 MonoBehaviour:
   m_ObjectHideFlags: 0

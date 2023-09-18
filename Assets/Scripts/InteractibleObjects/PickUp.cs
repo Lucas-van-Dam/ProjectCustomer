@@ -14,6 +14,8 @@ public class PickUp : MonoBehaviour, IInteractable
     float hoverSpeed = 20;
     [SerializeField]
     float hoverDrag = 20;
+    [SerializeField]
+    Vector3 hoverOffset = Vector3.zero;
 
 
     bool isBeingHeld = false;
@@ -30,7 +32,7 @@ public class PickUp : MonoBehaviour, IInteractable
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && isBeingHeld)
+        if (Input.GetMouseButtonUp(0) || Input.GetKeyDown(KeyCode.E) && isBeingHeld)
         {
             Drop();
         }
@@ -92,7 +94,7 @@ public class PickUp : MonoBehaviour, IInteractable
 
     Vector3 GetHoverTargetPosition()
     {
-        return player.transform.position + (cameraTransform.forward * hoverDistance);
+        return player.transform.position + (cameraTransform.forward * hoverDistance) + hoverOffset;
     }
 
     public string getToolTipText()
