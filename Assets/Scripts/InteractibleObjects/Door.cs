@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Door : MonoBehaviour, IInteractable
 {
     [SerializeField]
@@ -13,14 +14,19 @@ public class Door : MonoBehaviour, IInteractable
     [SerializeField]
     float rotationSpeed = 0.9f;
 
+    [SerializeField] private AudioClip doorOpening;
+    [SerializeField] private AudioClip doorClosing;
+    
     public bool Locked;
 
     float baseRotation;
     float targetRotation;
+    private AudioSource audioSource;
 
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         baseRotation = hinge.rotation.y;
         targetRotation = baseRotation;
     }
@@ -30,9 +36,15 @@ public class Door : MonoBehaviour, IInteractable
         if (Locked)
             return;
         if (targetRotation == baseRotation)
+        {
+            audioSource.PlayOneShot(doorOpening);
             targetRotation = baseRotation + rotationAngle;
+        }
         else
+        {
+            audioSource.PlayOneShot(doorClosing);
             targetRotation = baseRotation;
+        }
     }
 
     void FixedUpdate()

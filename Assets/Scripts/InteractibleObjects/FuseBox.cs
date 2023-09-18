@@ -1,15 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class FuseBox : MonoBehaviour, IInteractable
 {
-    [SerializeField]
-    Door door;
+    [SerializeField] private Door door;
+    [SerializeField] private AudioClip sound;
+
+    private bool interacted = false;
 
     public void Interact(GameObject interactor)
     {
+        if (interacted)
+        {
+            return;
+        }
         door.Locked = false;
+        interacted = true;
+        GetComponent<AudioSource>().PlayOneShot(sound);
     }
 
     public string getToolTipText()
