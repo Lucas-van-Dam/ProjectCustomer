@@ -8,7 +8,7 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
     [SerializeField]
     private KeyPuzzleManager puzzleManager;
 
-    private int piecesToCollect = 3;
+    public int piecesToCollect = 3;
 
     public void Interact(GameObject interactor)
     {
@@ -24,6 +24,11 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
     public void OnPieceCollected()
     {
         piecesToCollect--;
+    }
+
+    public bool IsPuzzleComplete()
+    {
+        return puzzleManager.finished;
     }
 
     public string getToolTipText()
