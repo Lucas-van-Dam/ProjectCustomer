@@ -6,7 +6,10 @@ using UnityEngine;
 public class SequentialLights : MonoBehaviour
 {
     [SerializeField] private List<List<GameObject>> lightSequence = new List<List<GameObject>>();
-    
+    [SerializeField] private float interval;
+    [SerializeField] private Material lightMaterial;
+
+    private bool on;
     
     void Start()
     {
@@ -21,9 +24,10 @@ public class SequentialLights : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !on)
         {
-            
+            on = true;
+            StartCoroutine(TurnOnLights(0));
         }
     }
 
@@ -31,8 +35,11 @@ public class SequentialLights : MonoBehaviour
     {
         foreach (GameObject light in lightSequence[step])
         {
-            
+            light.GetComponent<MeshRenderer>().material = lightMaterial;
         }
-        yield return 0;
+        yield return new WaitForSeconds(interval);
+        if (++step >= lightSequence.Count)
+            yield break;
+        StartCoroutine(TurnOnLights(step));
     }
 }
