@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class SequentialLights : MonoBehaviour
 {
-    [SerializeField] private List<List<GameObject>> lightSequence = new List<List<GameObject>>();
+    [SerializeField] private List<LightBundle> lightSequence = new List<LightBundle>();
     [SerializeField] private float interval;
     [SerializeField] private Material lightMaterial;
 
-    private bool on;
+    private bool on = false;
     
     void Start()
     {
@@ -27,19 +28,31 @@ public class SequentialLights : MonoBehaviour
         if (other.CompareTag("Player") && !on)
         {
             on = true;
-            StartCoroutine(TurnOnLights(0));
+            // StartCoroutine(TurnOnLights(0));
+            StartCoroutine(nameof(TurnOnLights), 0);
         }
     }
 
     private IEnumerator TurnOnLights(int step)
     {
-        foreach (GameObject light in lightSequence[step])
+        foreach (GameObject lightObj in lightSequence[step].lights)
         {
-            light.GetComponent<MeshRenderer>().material = lightMaterial;
+            Debug.Log("On" + step);
+            lightObj.GetComponent<MeshRenderer>().material = lightMaterial;
         }
         yield return new WaitForSeconds(interval);
         if (++step >= lightSequence.Count)
             yield break;
         StartCoroutine(TurnOnLights(step));
+    }
+}
+
+[System.Serializable]
+public class LightBundle : IEnumerable
+{
+    public List<GameObject> lights;
+    public IEnumerator GetEnumerator()
+    {
+        yield return GetEnumerator();
     }
 }
