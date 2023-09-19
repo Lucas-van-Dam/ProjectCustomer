@@ -93,8 +93,9 @@ public class KeypadUI : MonoBehaviour
 
     private void PlayKeySound()
     {
+        audioSource.pitch = defaultPitch;
         audioSource.pitch += Random.Range(-keyPitchRange, keyPitchRange);
         audioSource.PlayOneShot(keyPress);
-        audioSource.pitch = defaultPitch;
+        
     }
 }
