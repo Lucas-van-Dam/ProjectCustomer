@@ -136,6 +136,11 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 2479240831353703019, guid: 0edd337384022d448868c76a6bcac0a1,
+        type: 3}
+      propertyPath: activated
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3254223139977076484, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
       propertyPath: m_Intensity
@@ -212,7 +217,8 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 3285559337932649086, guid: 0edd337384022d448868c76a6bcac0a1, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0edd337384022d448868c76a6bcac0a1, type: 3}

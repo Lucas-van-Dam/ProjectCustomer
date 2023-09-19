@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class InteractWithObjects : MonoBehaviour
 {
     Transform cameraTransform;
     [SerializeField]
-    TextMeshProUGUI interactToolTip;
+    Image interactToolTip;
+    [SerializeField]
+    TextMeshProUGUI toolTipText;
 
     IInteractable iinteractable = null;
 
@@ -27,7 +30,8 @@ public class InteractWithObjects : MonoBehaviour
 
         if (hit.collider == null || !hit.collider.CompareTag("InteractableObject"))
         {
-            interactToolTip.text = "";
+            interactToolTip.enabled = false;
+            toolTipText.text = "";
             return;
         }
 
@@ -35,7 +39,19 @@ public class InteractWithObjects : MonoBehaviour
 
         if (iinteractable != interactable)
         {
-            interactToolTip.text = interactable.getToolTipText();
+            if (hit.collider.GetComponent<Door>() != null && hit.collider.GetComponent<Door>().Locked == true)
+            {
+                toolTipText.text = interactable.getToolTipText();
+            }
+            else if (hit.collider.GetComponent<PuzzleLoader>() != null && (hit.collider.GetComponent<PuzzleLoader>().piecesToCollect > 0 || hit.collider.GetComponent<PuzzleLoader>().IsPuzzleComplete()))
+            {
+                toolTipText.text = interactable.getToolTipText();
+            }
+            else
+            {
+                interactToolTip.enabled = true;
+            }
+
         }
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
@@ -47,7 +63,9 @@ public class InteractWithObjects : MonoBehaviour
     void Interacting(IInteractable interactable)
     {
 
-        interactToolTip.text = "";
+        interactToolTip.enabled = false;
+        toolTipText.text = "";
+
 
         interactable.Interact(this.gameObject);
     }
