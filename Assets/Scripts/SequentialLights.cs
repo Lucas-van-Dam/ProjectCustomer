@@ -7,6 +7,7 @@ public class SequentialLights : MonoBehaviour
 {
     [SerializeField] private List<List<GameObject>> lightSequence = new List<List<GameObject>>();
     
+    
     void Start()
     {
         
@@ -26,8 +27,12 @@ public class SequentialLights : MonoBehaviour
         }
     }
 
-    private IEnumerator TurnOnLights()
+    private IEnumerator TurnOnLights(int step)
     {
+        foreach (GameObject light in lightSequence[step])
+        {
+            
+        }
         yield return 0;
     }
 }
