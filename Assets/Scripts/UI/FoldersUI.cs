@@ -8,6 +8,8 @@ public class FoldersUI : MonoBehaviour
     [SerializeField] private List<Sprite> images; 
     [SerializeField] private Image imageDisplay;
     [SerializeField] private AudioClip pageTurning;
+    [SerializeField] private GameObject quitButton;
+    [SerializeField] private GameObject pickUpButton;
 
     private AudioSource audioSource; 
     
@@ -39,7 +41,6 @@ public class FoldersUI : MonoBehaviour
 
     public void Quit()
     {
-        Debug.Log("?????");
         gameObject.SetActive(false);
         player.Paralyse();
     }
@@ -51,6 +52,9 @@ public class FoldersUI : MonoBehaviour
         {
             if (transform == GetComponent<RectTransform>())
                 continue;
+
+            quitButton.SetActive(false);
+            pickUpButton.SetActive(false);
 
             transform.position -= new Vector3(500, 0, 0);
         }

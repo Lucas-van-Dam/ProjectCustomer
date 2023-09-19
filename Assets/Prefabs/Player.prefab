@@ -111,6 +111,7 @@ MonoBehaviour:
   failure: {fileID: 8300000, guid: 7376f62af0430fd45889c0d75dde3107, type: 3}
   deleteKeyPitchLowering: 0
   keyPitchRange: 0
+  folder: {fileID: 0}
 --- !u!82 &3537635718636995088
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1932,18 +1933,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 4837010274206633653}
         m_TargetAssemblyTypeName: FoldersUI, Assembly-CSharp
-        m_MethodName: Quit
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4837010274206633653}
-        m_TargetAssemblyTypeName: FoldersUI, Assembly-CSharp
         m_MethodName: MoveAside
         m_Mode: 1
         m_Arguments:
@@ -1957,6 +1946,18 @@ MonoBehaviour:
       - m_Target: {fileID: 6374712996449128549}
         m_TargetAssemblyTypeName: KeypadUI, Assembly-CSharp
         m_MethodName: MoveAside
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4837010274206633653}
+        m_TargetAssemblyTypeName: FoldersUI, Assembly-CSharp
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2869,6 +2870,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0b88a2d6c1d693f46b199a618e4a8c4e, type: 3}
   imageDisplay: {fileID: 8707604469825574903}
   pageTurning: {fileID: 0}
+  quitButton: {fileID: 5722760366242965274}
+  pickUpButton: {fileID: 3759133502065604649}
 --- !u!1 &6236358051946243091
 GameObject:
   m_ObjectHideFlags: 0
