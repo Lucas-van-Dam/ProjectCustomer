@@ -479,7 +479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: {x: 0.05, y: 0.1, z: 0.1}
+  precision: {x: 0.25, y: 0.25, z: 0.25}
   keyRotation: {x: 0, y: 0.7, z: 0}
   thisRotation: {x: 0, y: -0.7, z: 0}
   offset: {x: 0, y: 0.04, z: 0.03}
@@ -627,7 +627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef3d2b0b9569b14a9573048eed8b581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precision: {x: 0.1, y: 0.1, z: 0.1}
+  precision: {x: 0.25, y: 0.25, z: 0.25}
   keyRotation: {x: 0.5, y: -0.5, z: -0.5}
   thisRotation: {x: 0.5, y: 0.5, z: 0.5}
   offset: {x: 0, y: -0.12, z: 0}
