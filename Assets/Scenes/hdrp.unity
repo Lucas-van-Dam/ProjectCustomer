@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2159.0579, g: 2262.2444, b: 3283.4028, a: 1}
+  m_IndirectSpecularColor: {r: 2157.0886, g: 2260.1494, b: 3281.1826, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7223,6 +7223,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8198221575274375210, guid: b04967ef6cc7e7b4a9a7781b8775526d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 5302568919011541938, guid: d6a1210f595d0f440b13a6f8936f9bf1,
+        type: 3}
     - target: {fileID: 8520955581790193774, guid: b04967ef6cc7e7b4a9a7781b8775526d,
         type: 3}
       propertyPath: loader
@@ -8548,6 +8554,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8198221575274375210, guid: b04967ef6cc7e7b4a9a7781b8775526d,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 3369316746193770658, guid: d6a1210f595d0f440b13a6f8936f9bf1,
+        type: 3}
     - target: {fileID: 8520955581790193774, guid: b04967ef6cc7e7b4a9a7781b8775526d,
         type: 3}
       propertyPath: loader
@@ -9196,10 +9208,20 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2105339960}
+    - target: {fileID: 89176687456154819, guid: 0edd337384022d448868c76a6bcac0a1,
+        type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 2122372318}
+    - target: {fileID: 89176687456154819, guid: 0edd337384022d448868c76a6bcac0a1,
+        type: 3}
+      propertyPath: puzzleCam
+      value: 
+      objectReference: {fileID: 1458393056}
     - target: {fileID: 3585234886886496866, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4481399440958188028, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
@@ -9259,7 +9281,7 @@ PrefabInstance:
     - target: {fileID: 6655629010795345068, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6988974993840513782, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
@@ -10146,7 +10168,7 @@ PrefabInstance:
     - target: {fileID: 864430636658886721, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 918662136252712223, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
@@ -11169,6 +11191,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6145496558773025940, guid: 241ed2586416546409d1a7c92a967557,
     type: 3}
   m_PrefabInstance: {fileID: 1455290820}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1458393056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6655629010795345068, guid: 0edd337384022d448868c76a6bcac0a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1292193387}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1473218723
 GameObject:
@@ -17254,6 +17282,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 303635832}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!20 &2122372318 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 6593321343084123141, guid: 2cb299d967637824594e30ccea91c6e8,
+    type: 3}
+  m_PrefabInstance: {fileID: 1439036581}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
