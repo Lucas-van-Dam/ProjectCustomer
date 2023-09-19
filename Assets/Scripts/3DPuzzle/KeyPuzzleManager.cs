@@ -11,7 +11,9 @@ public class KeyPuzzleManager : MonoBehaviour
     Canvas canvas;
 
     [SerializeField]
-    Camera playerCam, puzzleCam;
+    Camera playerCam;
+    [SerializeField]
+    GameObject puzzleCam;
 
     [SerializeField]
     Door door;
@@ -31,7 +33,7 @@ public class KeyPuzzleManager : MonoBehaviour
         player.Paralyse();
 
         playerCam.enabled = false;
-        puzzleCam.enabled = true;
+        puzzleCam.SetActive(true);
     }
 
 
@@ -51,7 +53,7 @@ public class KeyPuzzleManager : MonoBehaviour
         door.Locked = false;
 
         playerCam.enabled = true;
-        puzzleCam.enabled = false;
+        puzzleCam.SetActive(false);
     }
 
 }
