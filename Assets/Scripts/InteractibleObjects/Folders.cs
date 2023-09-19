@@ -6,10 +6,18 @@ using UnityEngine.UI;
 public class Folders : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject folderUI;
+    [SerializeField] private AudioClip folderSlide;
 
+    private AudioSource audioSource;
+
+    public void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void Interact(GameObject interactor)
     {
         folderUI.SetActive(true);
+        audioSource.PlayOneShot(folderSlide);
         folderUI.GetComponent<FoldersUI>().Enable(interactor);
         interactor.GetComponent<Movement>().Paralyse();
     }
