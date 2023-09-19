@@ -44,7 +44,6 @@ public class KeypadUI : MonoBehaviour
 
     public void KeyPressed(string key)
     {
-        audioSource.pitch = defaultPitch;
         PlayKeySound();
         currentCombination.Add(key.ToCharArray().FirstOrDefault());
 
@@ -52,6 +51,7 @@ public class KeypadUI : MonoBehaviour
         {
             if (currentCombination.SequenceEqual(correctCombination))
             {
+                audioSource.pitch = defaultPitch;
                 audioSource.PlayOneShot(succes);
                 door.Locked = false;
                 gameObject.SetActive(false);
@@ -59,6 +59,7 @@ public class KeypadUI : MonoBehaviour
             }
             else
             {
+                audioSource.pitch = defaultPitch;
                 audioSource.PlayOneShot(failure);
                 currentCombination.Clear();
             }
