@@ -51,11 +51,7 @@ public class KeypadUI : MonoBehaviour
         {
             if (currentCombination.SequenceEqual(correctCombination))
             {
-                audioSource.pitch = defaultPitch;
-                audioSource.PlayOneShot(succes);
-                door.Locked = false;
-                gameObject.SetActive(false);
-                interactor.GetComponent<Movement>().Paralyse();
+                StartCoroutine(QuitScreen());
             }
             else
             {
@@ -100,5 +96,15 @@ public class KeypadUI : MonoBehaviour
         audioSource.pitch += Random.Range(-keyPitchRange, keyPitchRange);
         audioSource.PlayOneShot(keyPress);
         
+    }
+
+    private IEnumerator QuitScreen()
+    {
+        audioSource.pitch = defaultPitch;
+        audioSource.PlayOneShot(succes);
+        door.Locked = false;
+        yield return new WaitForSeconds(0.5f);
+        interactor.GetComponent<Movement>().Paralyse();
+        gameObject.SetActive(false);
     }
 }
