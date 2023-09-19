@@ -39,11 +39,21 @@ public class FoldersUI : MonoBehaviour
 
     public void Quit()
     {
+        Debug.Log("?????");
         gameObject.SetActive(false);
         player.Paralyse();
     }
-    
-    
-    
-    
+
+
+    public void MoveAside()
+    {
+        foreach (RectTransform transform in GetComponentsInChildren<RectTransform>())
+        {
+            if (transform == GetComponent<RectTransform>())
+                continue;
+
+            transform.position -= new Vector3(500, 0, 0);
+        }
+    }
+
 }

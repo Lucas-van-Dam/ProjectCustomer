@@ -18,4 +18,9 @@ public class Folders : MonoBehaviour, IInteractable
     {
         return "Press E/left click to inspect";
     }
+
+    public void Delete()
+    {
+        GameObject.Destroy(gameObject);
+    }
 }

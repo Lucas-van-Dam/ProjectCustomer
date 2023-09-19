@@ -17,6 +17,7 @@ public class KeypadUI : MonoBehaviour
     [SerializeField] private AudioClip failure;
     [SerializeField] private float deleteKeyPitchLowering;
     [SerializeField] private float keyPitchRange;
+    [SerializeField] private FoldersUI folder;
 
     private GameObject interactor;
     
@@ -28,6 +29,7 @@ public class KeypadUI : MonoBehaviour
 
     private void Start()
     {
+
         audioSource = GetComponent<AudioSource>();
         defaultPitch = audioSource.pitch;
     }
@@ -106,5 +108,19 @@ public class KeypadUI : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         interactor.GetComponent<Movement>().Paralyse();
         gameObject.SetActive(false);
+
+        folder.gameObject.SetActive(false);
+    }
+
+
+    public void MoveAside()
+    {
+        foreach (RectTransform transform in GetComponentsInChildren<RectTransform>())
+        {
+            if (transform == GetComponent<RectTransform>())
+                continue;
+
+            transform.position += new Vector3(500, 0, 0);
+        }
     }
 }

@@ -7,28 +7,30 @@ public class Keypad : MonoBehaviour, IInteractable
     [SerializeField] private string tooltipText;
     
     [SerializeField] private GameObject keypadUI;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private GameObject folderUI;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private bool folderAdded = false;
 
     public void Interact(GameObject interactor)
     {
         interactor.GetComponent<Movement>().Paralyse();
         keypadUI.SetActive(true);
         keypadUI.GetComponent<KeypadUI>().Enable(interactor);
+
+        if (folderAdded)
+        {
+            folderUI.SetActive(true);
+        }
+    }
+
+    public void FolderCollected()
+    {
+        folderAdded = true;
     }
 
     public string getToolTipText()
     {
         return "Press E/left click to open keypad";
     }
+
 }
