@@ -1,10 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class SequentialLights : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] private List<List<GameObject>> lightSequence = new List<List<GameObject>>();
+    
     void Start()
     {
         
@@ -14,5 +16,18 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            
+        }
+    }
+
+    private IEnumerator TurnOnLights()
+    {
+        yield return 0;
     }
 }
