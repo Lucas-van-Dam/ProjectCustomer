@@ -44,6 +44,7 @@ public class KeypadUI : MonoBehaviour
 
     public void KeyPressed(string key)
     {
+        audioSource.pitch = defaultPitch;
         PlayKeySound();
         currentCombination.Add(key.ToCharArray().FirstOrDefault());
 
@@ -79,6 +80,7 @@ public class KeypadUI : MonoBehaviour
 
     public void QuitKey()
     {
+        audioSource.pitch = defaultPitch;
         audioSource.PlayOneShot(keyPress);
         gameObject.SetActive(false);
         interactor.GetComponent<Movement>().Paralyse();
