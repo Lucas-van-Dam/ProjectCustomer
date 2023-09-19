@@ -7,10 +7,18 @@ public class FoldersUI : MonoBehaviour
 {
     [SerializeField] private List<Sprite> images; 
     [SerializeField] private Image imageDisplay;
+    [SerializeField] private AudioClip pageTurning;
+
+    private AudioSource audioSource; 
     
     private Movement player;
     private int currentImage = 0;
 
+
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void Enable(GameObject interactor)
     {
         imageDisplay.sprite = images[0];
@@ -20,11 +28,13 @@ public class FoldersUI : MonoBehaviour
     public void NextImage()
     {
         imageDisplay.sprite = images[++currentImage > images.Count - 1 ? --currentImage : currentImage];
+        audioSource.PlayOneShot(pageTurning);
     }
 
     public void PreviousImage()
     {
         imageDisplay.sprite = images[--currentImage < 0 ? ++currentImage : currentImage];
+        audioSource.PlayOneShot(pageTurning);
     }
 
     public void Quit()

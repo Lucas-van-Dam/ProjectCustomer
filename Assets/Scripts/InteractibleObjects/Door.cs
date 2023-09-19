@@ -16,6 +16,7 @@ public class Door : MonoBehaviour, IInteractable
 
     [SerializeField] private AudioClip doorOpening;
     [SerializeField] private AudioClip doorClosing;
+    [SerializeField] private AudioClip doorLocked;
     
     public bool Locked;
 
@@ -34,7 +35,11 @@ public class Door : MonoBehaviour, IInteractable
     public void Interact(GameObject interactor)
     {
         if (Locked)
+        {
+            audioSource.PlayOneShot(doorLocked);
             return;
+        }
+            
         if (targetRotation == baseRotation)
         {
             audioSource.PlayOneShot(doorOpening);

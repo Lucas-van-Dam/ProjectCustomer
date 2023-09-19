@@ -156,6 +156,7 @@ MonoBehaviour:
   rotationSpeed: 0.05
   doorOpening: {fileID: 8300000, guid: b571bd5614e99034ba622cb9bb076c02, type: 3}
   doorClosing: {fileID: 8300000, guid: d37d8f7b3d6c0a3439275959af61b387, type: 3}
+  doorLocked: {fileID: 8300000, guid: 8dadd53ea0209f440b81e4f40b84bbd9, type: 3}
   Locked: 1
 --- !u!82 &67907462171935079
 AudioSource:
@@ -169,7 +170,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.74
   m_Pitch: 1
   Loop: 0
   Mute: 0
