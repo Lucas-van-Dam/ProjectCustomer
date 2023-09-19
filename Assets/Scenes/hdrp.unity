@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2157.932, g: 2261.2385, b: 3282.9575, a: 1}
+  m_IndirectSpecularColor: {r: 2159.0579, g: 2262.2444, b: 3283.4028, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9196,6 +9196,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2105339960}
+    - target: {fileID: 3585234886886496866, guid: 0edd337384022d448868c76a6bcac0a1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4481399440958188028, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
       propertyPath: m_Name
@@ -9250,6 +9255,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6655629010795345068, guid: 0edd337384022d448868c76a6bcac0a1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6988974993840513782, guid: 0edd337384022d448868c76a6bcac0a1,
         type: 3}
@@ -10136,7 +10146,7 @@ PrefabInstance:
     - target: {fileID: 864430636658886721, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 918662136252712223, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
@@ -10388,6 +10398,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: g
       objectReference: {fileID: 0}
+    - target: {fileID: 3537635718636995088, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4067304008670017424, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_Color.a
@@ -10620,6 +10635,11 @@ PrefabInstance:
       objectReference: {fileID: 1606573120}
     - target: {fileID: 6374712996449128549, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
+      propertyPath: keyPitchRange
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6374712996449128549, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
       propertyPath: correctCombination.Array.data[0]
       value: 69
       objectReference: {fileID: 0}
@@ -10640,8 +10660,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
+      propertyPath: cursorLock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
       propertyPath: moveSmoothTime
       value: 0.071
+      objectReference: {fileID: 0}
+    - target: {fileID: 6465649211103843763, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: mouseSensitivity
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 6510153745192023002, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
