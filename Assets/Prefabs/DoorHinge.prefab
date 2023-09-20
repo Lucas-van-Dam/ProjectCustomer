@@ -26,13 +26,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.84, y: 2.48, z: 3}
-  m_LocalScale: {x: 0.8982919, y: 0.89829206, z: 0.898292}
+  m_LocalScale: {x: 0.42880875, y: 0.6120085, z: 0.27375683}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 207902769038171416}
+  - {fileID: 2986723466400067400}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5300842602439149683
+--- !u!1 &6295334051848823660
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40,49 +40,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 207902769038171416}
-  - component: {fileID: 4796305195938351387}
-  - component: {fileID: 8701837947475611231}
-  - component: {fileID: 8453071581756626098}
-  - component: {fileID: 6499678816710425821}
-  - component: {fileID: 67907462171935079}
+  - component: {fileID: 2986723466400067400}
+  - component: {fileID: 2510803659372509268}
+  - component: {fileID: 2820135084690139497}
+  - component: {fileID: 1620399015448297042}
+  - component: {fileID: 5931040485977493009}
+  - component: {fileID: 7507255787226522412}
   m_Layer: 0
-  m_Name: Door
+  m_Name: Door (1)
   m_TagString: InteractableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &207902769038171416
+--- !u!4 &2986723466400067400
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
+  m_GameObject: {fileID: 6295334051848823660}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 0.2}
+  m_LocalPosition: {x: -2.02, y: -1.59, z: 0}
+  m_LocalScale: {x: -2.3320422, y: 1.6339642, z: 3.6528769}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2220982478244402207}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4796305195938351387
+--- !u!33 &2510803659372509268
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &8701837947475611231
+  m_GameObject: {fileID: 6295334051848823660}
+  m_Mesh: {fileID: 2619086233303812490, guid: 88dad93d47c096948a5ed70aff6dc3f5, type: 3}
+--- !u!23 &2820135084690139497
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
+  m_GameObject: {fileID: 6295334051848823660}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -96,7 +96,8 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 73c176f402d2c2f4d929aa5da7585d17, type: 2}
+  - {fileID: -9015049886776836758, guid: 88dad93d47c096948a5ed70aff6dc3f5, type: 3}
+  - {fileID: -2114024978661820445, guid: 88dad93d47c096948a5ed70aff6dc3f5, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -118,13 +119,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &8453071581756626098
-BoxCollider:
+--- !u!64 &1620399015448297042
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
+  m_GameObject: {fileID: 6295334051848823660}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -136,41 +137,23 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6499678816710425821
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b32a649642232d418c27a528cbcd623, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hinge: {fileID: 2220982478244402207}
-  rotationAngle: -0.8
-  rotationSpeed: 0.05
-  doorOpening: {fileID: 8300000, guid: b571bd5614e99034ba622cb9bb076c02, type: 3}
-  doorClosing: {fileID: 8300000, guid: d37d8f7b3d6c0a3439275959af61b387, type: 3}
-  doorLocked: {fileID: 8300000, guid: 8dadd53ea0209f440b81e4f40b84bbd9, type: 3}
-  Locked: 1
---- !u!82 &67907462171935079
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2619086233303812490, guid: 88dad93d47c096948a5ed70aff6dc3f5, type: 3}
+--- !u!82 &5931040485977493009
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5300842602439149683}
+  m_GameObject: {fileID: 6295334051848823660}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.74
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -254,3 +237,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7507255787226522412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6295334051848823660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b32a649642232d418c27a528cbcd623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hinge: {fileID: 2220982478244402207}
+  rotationAngle: -0.8
+  rotationSpeed: 0.05
+  doorOpening: {fileID: 8300000, guid: b571bd5614e99034ba622cb9bb076c02, type: 3}
+  doorClosing: {fileID: 8300000, guid: d37d8f7b3d6c0a3439275959af61b387, type: 3}
+  doorLocked: {fileID: 8300000, guid: 8dadd53ea0209f440b81e4f40b84bbd9, type: 3}
+  Locked: 1
