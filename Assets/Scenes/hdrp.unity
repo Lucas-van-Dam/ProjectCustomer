@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2157.1555, g: 2258.7385, b: 3116.1528, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18388,19 +18388,9 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1454474402116300768, guid: af326e65a5ee4f1438a4a3d6466d38f6,
         type: 3}
-      propertyPath: dropObject
-      value: 
-      objectReference: {fileID: 8300000, guid: f3912a9d34f41384fad6d650a04cd298, type: 3}
-    - target: {fileID: 1454474402116300768, guid: af326e65a5ee4f1438a4a3d6466d38f6,
-        type: 3}
-      propertyPath: hoverSpeed
-      value: 200
+      propertyPath: hoverDrag
+      value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 1454474402116300768, guid: af326e65a5ee4f1438a4a3d6466d38f6,
-        type: 3}
-      propertyPath: pickUpObject
-      value: 
-      objectReference: {fileID: 8300000, guid: e409e2966a2cfdd49bc2e00e6d712724, type: 3}
     - target: {fileID: 1454474402116300768, guid: af326e65a5ee4f1438a4a3d6466d38f6,
         type: 3}
       propertyPath: hoverDistance
