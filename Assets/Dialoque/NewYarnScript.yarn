@@ -1,7 +1,7 @@
 ﻿
 
 title: StartMom
-position: -509,-81
+position: -376,85
 ---
 <<declare $talkToMother = false >>
 
@@ -14,22 +14,23 @@ My baby! Where is my baby!
 ===
 
 title: WhatsWrong
-position: -206,-206
+position: -306,-293
 ---
 
 I don't understand... where is my baby? You must find him.
 
--> Alright, I will try find your child.
+-> Alright, I will try my best to find your child.
     <<jump DontWorry>>
 -> I don't have time for this... Now let me through.
     <<jump DontHaveTime>>
 ===
+
 title: DontWorry
-position: -67,53
+position: -42,-553
 ---
 
 <<set $talkToMother = true>>
-Thank you...
+Please hurry, we don't have much time...
 ===
 
 title: DontHaveTime
@@ -43,7 +44,7 @@ position: 137,-249
 
 
 title: StartKid
-position: 177,-39
+position: 193,-64
 ---
 
 *Sniff* mama...
@@ -62,7 +63,7 @@ position: 177,-39
 
 
 title: ComeWithMe
-position: -509,-81
+position: 484,-30
 ---
 
 *sniff* ok... *sniff*
@@ -71,7 +72,7 @@ position: -509,-81
 ===
 
 title: LookingForMom
-position: -509,-81
+position: -679,-187
 ---
 
 Yes... 
@@ -84,7 +85,7 @@ Yes...
 
 
 title: WhyAreYouCrying
-position: -418,139
+position: -33,146
 ---
 
 *Keeps crying*
@@ -92,7 +93,7 @@ position: -418,139
 ===
 
 title: StartKid2
-position: -686,111
+position: -655,100
 ---
 
 Ya looking for someone? All I been hearing is this kid crying for his mama all night. 
@@ -113,10 +114,10 @@ position: -838,-414
 ===
 
 title: SeenAKid
-position: -542,-352
+position: -544,-512
 ---
 
-Everyone around here hasn't seen their mother since they arrived. I heard one kid never got to the cages though, it's probably hiding in a corner somewhere. Won't take long before the stray gets found.
+Everyone around here hasn't seen their mother since they arrived. I heard one kid never got to the cages though, it's probably hiding in a corner somewhere.
 
 
 ===
@@ -142,21 +143,45 @@ position: -676,331
 
 You're... out of your cage... you should not... 
 
-    -> Why shouldn't I? 
+-> Why shouldn't I? 
+    <<jump WhyShouldntI>>
+-> Who's keeping us in these cages? 
+    <<jump WhosKeepingUs>>
+
+===
+
+title: WhyShouldntI
+position: -676,331
+---
 
 ...
 
 ===
 
+title: WhosKeepingUs
+position: -676,331
+---
 
+...
+
+===
 title: StartAdult3
 position: -457,333
 ---
 
-Hey, you're awake.
+Oh, you're awake. 
 
--> What am I doing here? Why are we in this cage?
+-> What am I doing here? Why are we trapped in these cages?
+    <<jump WhatAmIDoingHere>>
+-> Who are you? 
+    <<jump WhoAreYou>>
 
+
+===
+
+title: WhatAmIDoingHere
+position: -311,551
+---
 I don't know any better than you. All I know is we're stuck in here. 
 
 -> I don't understand... 
@@ -166,19 +191,41 @@ I don't know any better than you. All I know is we're stuck in here.
 
 ===
 
-
-title: DontUnderstand
-position: -451,473
+title: WhoAreYou
+position: -811,641
 ---
 
-Neither do I, but that's just how it goes now...
+Me? I'm just a regular bloke who ended up in here. 
 
+-> What am I doing here? Why are we trapped in these cages? 
+    <<jump WhatAmIDoingHere>>
 ===
-title: GetOutOfHere
-position: -450,616
+title: DontUnderstand
+position: -184,839
 ---
 
-If I knew that, I wouldn't be here talking to you, would I?
+I wouldn't try to understand if I were you, just be grateful you made it here in one piece. 
+
+-> What do you mean?
+    <<jump WhatDoYouMean>>
+===
+
+title: WhatDoYouMean
+position: -184,839
+---
+
+Wait, you don't remember do you? Well... The road here is always quite rough, most of the others die before making it here. You could say we're the lucky ones, although I'm not sure how true that statement is...
+
+-> Jesus. I need to get the hell out of here, tell me how. 
+    <<jump GetOutOfHere>>
+===
+
+
+title: GetOutOfHere
+position: -542,917
+---
+
+If I knew that, I wouldn't be here talking to you, would I now?
 
 ===
 
@@ -204,7 +251,7 @@ It doesn't make sense...
 ===
 
 title: WhatSense
-position: 221,499
+position: 223,630
 ---
 
 The symbols... it must be a code... 
@@ -221,17 +268,22 @@ position: 460,494
 ===
 
 title: StartBurntMan3
-position: 452,343
+position: 454,339
 ---
 
-The key... agh... that folder... burn... agh... 
+You're trying to leave this place, aren't you? 
+
+-> I am, you got any idea how to do it? 
+    <<jump GotAnyIdea>>
 
 ===
 
 title: StartBurntMan4
-position: 689,342
+position: 680,342
 ---
 
 You're out of you cage...? It's pointless. There is no way out. 
 
 ===
+
+
