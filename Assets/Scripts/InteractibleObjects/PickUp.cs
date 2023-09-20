@@ -40,7 +40,7 @@ public class PickUp : MonoBehaviour, IInteractable
 
     void Update()
     {
-        if (Input.GetMouseButtonUp(0) || Input.GetKeyDown(KeyCode.E) && isBeingHeld)
+        if ((Input.GetMouseButtonUp(0) || Input.GetKeyDown(KeyCode.E)) && isBeingHeld)
         {
             Drop();
         }
