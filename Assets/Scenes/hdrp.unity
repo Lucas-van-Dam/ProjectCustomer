@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5568.149, g: 3939.4224, b: 3937.1255, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -387,7 +387,8 @@ AudioSource:
   m_GameObject: {fileID: 44793500}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 2246619471308922610, guid: 4b957677271b88f4fbfb2644b9a912cb,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -8697,6 +8698,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3341346554425650330, guid: 7dbb24636559ead47a87242d915fbd9d,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.581728
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341346554425650330, guid: 7dbb24636559ead47a87242d915fbd9d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.186296
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341346554425650330, guid: 7dbb24636559ead47a87242d915fbd9d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.581728
+      objectReference: {fileID: 0}
+    - target: {fileID: 3341346554425650330, guid: 7dbb24636559ead47a87242d915fbd9d,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.4878883
       objectReference: {fileID: 0}
@@ -11807,53 +11823,65 @@ PrefabInstance:
     - target: {fileID: 1127698469141354116, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1127698469141354116, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2661050078901447053, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2661050078901447053, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3223465093824048805, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3223465093824048805, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3223465093824048805, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5038528133548933819, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 4b957677271b88f4fbfb2644b9a912cb,
+        type: 2}
+    - target: {fileID: 5557236270208888290, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: 4b957677271b88f4fbfb2644b9a912cb,
+        type: 2}
     - target: {fileID: 6374712996449128549, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: door
@@ -11923,6 +11951,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8867493554302339430, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

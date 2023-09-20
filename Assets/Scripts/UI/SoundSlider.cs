@@ -9,6 +9,7 @@ public class SoundSlider : MonoBehaviour
     [SerializeField]
     string mixerGroup;
 
+    [SerializeField]
     AudioMixer mixer;
 
 
