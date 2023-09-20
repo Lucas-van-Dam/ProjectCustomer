@@ -121,9 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f89e0c0bd837d76439dff1e1db6ba55a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoverDistance: 5
+  hoverDistance: 2
   hoverSpeed: 1000
   hoverDrag: 20
+  hoverOffset: {x: 0, y: 0, z: 0}
+  pickUpObject: {fileID: 0}
+  dropObject: {fileID: 0}
 --- !u!54 &4655112354605251141
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,5 +152,5 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 112
   m_CollisionDetection: 0
