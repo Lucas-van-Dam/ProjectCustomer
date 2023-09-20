@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -20,11 +21,22 @@ public class PauseMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            movement.Paralyse();
-
-            menu.SetActive(isMenuOpen);
-
-            isMenuOpen = !isMenuOpen;
+            OpenCloseMenu();
         }
+    }
+
+
+    public void OpenCloseMenu()
+    {
+        movement.Paralyse();
+
+        menu.SetActive(isMenuOpen);
+
+        isMenuOpen = !isMenuOpen;
+    }
+
+    public void LoadMenu()
+    {
+        SceneManager.LoadScene("Menu Screen Alex", LoadSceneMode.Single);
     }
 }
