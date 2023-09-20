@@ -10,6 +10,9 @@ public class FoldersUI : MonoBehaviour
     [SerializeField] private AudioClip pageTurning;
     [SerializeField] private GameObject quitButton;
     [SerializeField] private GameObject pickUpButton;
+    [SerializeField] private GameObject leftButtonImage;
+    [SerializeField] private GameObject rightButtonImage;
+
 
     private AudioSource audioSource; 
     
@@ -50,7 +53,7 @@ public class FoldersUI : MonoBehaviour
     {
         foreach (RectTransform transform in GetComponentsInChildren<RectTransform>())
         {
-            if (transform == GetComponent<RectTransform>())
+            if (transform == GetComponent<RectTransform>() || transform.gameObject == leftButtonImage || transform.gameObject == rightButtonImage)
                 continue;
 
             quitButton.SetActive(false);

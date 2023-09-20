@@ -83,6 +83,8 @@ public class KeypadUI : MonoBehaviour
         audioSource.PlayOneShot(keyPress);
         gameObject.SetActive(false);
         interactor.GetComponent<Movement>().Paralyse();
+        folder.gameObject.SetActive(false);
+
     }
 
     private void UpdateScreen()

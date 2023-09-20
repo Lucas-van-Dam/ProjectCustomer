@@ -111,7 +111,7 @@ MonoBehaviour:
   failure: {fileID: 8300000, guid: 7376f62af0430fd45889c0d75dde3107, type: 3}
   deleteKeyPitchLowering: 0
   keyPitchRange: 0
-  folder: {fileID: 0}
+  folder: {fileID: 4837010274206633653}
 --- !u!82 &3537635718636995088
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2872,6 +2872,8 @@ MonoBehaviour:
   pageTurning: {fileID: 0}
   quitButton: {fileID: 5722760366242965274}
   pickUpButton: {fileID: 3759133502065604649}
+  leftButtonImage: {fileID: 8914628901491131066}
+  rightButtonImage: {fileID: 5716258433630883054}
 --- !u!1 &6236358051946243091
 GameObject:
   m_ObjectHideFlags: 0
