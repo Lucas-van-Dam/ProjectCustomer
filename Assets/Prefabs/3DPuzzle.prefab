@@ -755,7 +755,7 @@ MonoBehaviour:
   pieceHolder: {fileID: 2479240831353703019}
   canvas: {fileID: 5181085926399673387}
   playerCam: {fileID: 0}
-  puzzleCam: {fileID: 3585234886886496866}
+  puzzleCam: {fileID: 6655629010795345068}
   door: {fileID: 0}
   player: {fileID: 0}
   finished: 0

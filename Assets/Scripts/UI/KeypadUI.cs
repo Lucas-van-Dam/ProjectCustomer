@@ -26,6 +26,7 @@ public class KeypadUI : MonoBehaviour
     private AudioSource audioSource;
     private float defaultPitch;
     
+    private bool folderPickedUp = false;
 
     private void Start()
     {
@@ -41,6 +42,8 @@ public class KeypadUI : MonoBehaviour
 
     public void Enable(GameObject interactor)
     {
+        if (folderPickedUp)
+            folder.gameObject.SetActive(true);
         this.interactor = interactor;
     }
 
@@ -83,6 +86,8 @@ public class KeypadUI : MonoBehaviour
         audioSource.PlayOneShot(keyPress);
         gameObject.SetActive(false);
         interactor.GetComponent<Movement>().Paralyse();
+        folder.gameObject.SetActive(false);
+
     }
 
     private void UpdateScreen()
@@ -115,6 +120,8 @@ public class KeypadUI : MonoBehaviour
 
     public void MoveAside()
     {
+        folderPickedUp = true;
+
         foreach (RectTransform transform in GetComponentsInChildren<RectTransform>())
         {
             if (transform == GetComponent<RectTransform>())
