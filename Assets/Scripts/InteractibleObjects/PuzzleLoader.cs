@@ -7,9 +7,16 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
 {
     [SerializeField]
     private KeyPuzzleManager puzzleManager;
-
+    [SerializeField]
+    private AudioClip piecePickUp;
     public int piecesToCollect = 3;
 
+    private AudioSource audioSource;
+
+    public void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void Interact(GameObject interactor)
     {
         if (puzzleManager.finished)
@@ -24,6 +31,8 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
     public void OnPieceCollected()
     {
         piecesToCollect--;
+        audioSource.PlayOneShot(piecePickUp);
+
     }
 
     public bool IsPuzzleComplete()

@@ -11,6 +11,7 @@ public class ClimbLadder : MonoBehaviour
     float climbSpeed = 3;
 
 
+
     private void Start()
     {
         movement = GetComponent<Movement>();

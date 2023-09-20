@@ -17,6 +17,12 @@ public class PickUp : MonoBehaviour, IInteractable
     [SerializeField]
     Vector3 hoverOffset = Vector3.zero;
 
+    [SerializeField]
+    private AudioClip pickUpObject;
+    [SerializeField]
+    private AudioClip dropObject; 
+
+    private AudioSource audioSource; 
 
     bool isBeingHeld = false;
 
@@ -27,6 +33,8 @@ public class PickUp : MonoBehaviour, IInteractable
     {
         
         rb = GetComponent<Rigidbody>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -77,7 +85,6 @@ public class PickUp : MonoBehaviour, IInteractable
         isBeingHeld = false;
         gameObject.layer = 0;
         justPutDown = true;
-
     }
 
 
@@ -88,6 +95,8 @@ public class PickUp : MonoBehaviour, IInteractable
             player = interactor;
             cameraTransform = player.GetComponentInChildren<Camera>().transform;
             PickingUp();
+
+            audioSource.PlayOneShot(pickUpObject);
         }
     }
 
