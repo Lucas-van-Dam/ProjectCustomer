@@ -9,6 +9,7 @@ public class SequentialLights : MonoBehaviour
     [SerializeField] private List<LightBundle> lightSequence = new List<LightBundle>();
     [SerializeField] private float interval;
     [SerializeField] private Material lightMaterial;
+    [SerializeField] private AudioClip lightTurnOnSound;
 
     private bool on = false;
     
@@ -37,7 +38,7 @@ public class SequentialLights : MonoBehaviour
     {
         foreach (GameObject lightObj in lightSequence[step].lights)
         {
-            Debug.Log("On" + step);
+            lightObj.GetComponent<LightElement>()?.PlayAudio(lightTurnOnSound);
             lightObj.GetComponent<MeshRenderer>().material = lightMaterial;
         }
         yield return new WaitForSeconds(interval);
