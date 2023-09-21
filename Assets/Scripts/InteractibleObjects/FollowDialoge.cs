@@ -25,5 +25,6 @@ public class FollowDialogue : Dialogue
 
         GetComponent<ChaseObject>().target = target;
         GetComponent<ChaseObject>().isFollowActive = true;
+        SetStartNodeName("KidStops");
     }
 }

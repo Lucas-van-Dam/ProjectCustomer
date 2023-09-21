@@ -18,7 +18,13 @@ public class Dialogue : MonoBehaviour, IInteractable
     {
         Destroy(gameObject);
     }
-    
+
+
+    public void SetStartNodeName(string nodeName)
+    {
+        startNodeName = nodeName;
+    }
+
     public string getToolTipText()
     {
         return "Press E/left click to talk";
