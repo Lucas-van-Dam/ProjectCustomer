@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5570.0474, g: 3941.3364, b: 3938.3677, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11497,6 +11497,16 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1394102262721681139, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1394102262721681139, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2661050078901447053, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -11510,17 +11520,17 @@ PrefabInstance:
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3135931475515700458, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3223465093824048805, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
@@ -11614,15 +11624,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7617602206898344113, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617602206898344113, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8115021664573574540, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8667979298444826838, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667979298444826838, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667979298444826838, guid: 2cb299d967637824594e30ccea91c6e8,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8867493554302339430, guid: 2cb299d967637824594e30ccea91c6e8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
