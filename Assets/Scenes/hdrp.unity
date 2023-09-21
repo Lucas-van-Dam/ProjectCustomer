@@ -39,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 5571.395, g: 3942.3403, b: 3939.1802, a: 1}
+  m_IndirectSpecularColor: {r: 5570.0474, g: 3941.3364, b: 3938.3677, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18603,7 +18603,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d880d682736d31499ba3b56fe341644, type: 3}
---- !u!1001 &8088888786408657163
+--- !u!1001 &6943595749991264521
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -18611,126 +18611,126 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[0].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 383136994}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[0].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 887269080}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[1].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 323884621}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[1].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 1298635507}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[2].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 1130528908}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[2].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 1057206964}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[3].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 1873914748}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[3].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 1756510670}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[4].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 526434021}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[4].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 171612606}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[5].lights.Array.data[0]
-      value: 
-      objectReference: {fileID: 1818750015}
-    - target: {fileID: 348471764564633793, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: lightSequence.Array.data[5].lights.Array.data[1]
-      value: 
-      objectReference: {fileID: 272075467}
-    - target: {fileID: 1648932180021027392, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
-        type: 3}
-      propertyPath: m_Name
-      value: SequentialLights
-      objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -14.604
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.551
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 110.83
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3200655621700124891, guid: 6662cc6f13a5e0f49b09535ef2cf8604,
+    - target: {fileID: 6225516743369545514, guid: df377b3a0feab3948aef2b39eda4b209,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7848743075909203377, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: m_Name
+      value: SequentialLights
+      objectReference: {fileID: 0}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[0].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 383136994}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[0].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 887269080}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[1].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 323884621}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[1].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 1298635507}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[2].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1130528908}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[2].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 1057206964}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[3].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1873914748}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[3].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 1756510670}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[4].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 526434021}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[4].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 171612606}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[5].lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 1818750015}
+    - target: {fileID: 9140191868303327024, guid: df377b3a0feab3948aef2b39eda4b209,
+        type: 3}
+      propertyPath: lightSequence.Array.data[5].lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 272075467}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6662cc6f13a5e0f49b09535ef2cf8604, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: df377b3a0feab3948aef2b39eda4b209, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -18766,5 +18766,5 @@ SceneRoots:
   - {fileID: 4314307108847708075}
   - {fileID: 2052590516}
   - {fileID: 1292193387}
-  - {fileID: 8088888786408657163}
+  - {fileID: 6943595749991264521}
   - {fileID: 561099216}
