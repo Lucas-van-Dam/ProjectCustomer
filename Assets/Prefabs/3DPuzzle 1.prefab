@@ -978,7 +978,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47e5eb47a737b1f479cef3e62e938eb0, type: 2}
+  - {fileID: 2100000, guid: 1de26fdecb0dc734da12e366c9a165f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1016,7 +1016,7 @@ MonoBehaviour:
   keyRotation: {x: 0.5, y: -0.5, z: -0.5}
   thisRotation: {x: 0.5, y: 0.5, z: 0.5}
   offset: {x: 0, y: -0.12, z: 0}
-  offsetRotation: {x: -90, y: 0, z: 0}
+  offsetRotation: {x: 90, y: 0, z: 0}
 --- !u!1 &7492575573395473040
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 47e5eb47a737b1f479cef3e62e938eb0, type: 2}
+  - {fileID: 2100000, guid: 1de26fdecb0dc734da12e366c9a165f7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

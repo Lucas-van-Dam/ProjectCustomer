@@ -28,6 +28,7 @@ public class PickUp : MonoBehaviour, IInteractable
 
     bool justPutDown = false;
 
+    bool isLadder = false;
 
     void Start()
     {
@@ -35,6 +36,11 @@ public class PickUp : MonoBehaviour, IInteractable
         rb = GetComponent<Rigidbody>();
 
         audioSource = GetComponent<AudioSource>();
+    
+        if (GetComponent<Ladder>() != null)
+        {
+            isLadder = true;
+        }
     }
 
 
@@ -97,13 +103,31 @@ public class PickUp : MonoBehaviour, IInteractable
             PickingUp();
 
             audioSource.PlayOneShot(pickUpObject);
+
+
         }
     }
 
 
     Vector3 GetHoverTargetPosition()
     {
-        return player.transform.position + (cameraTransform.forward * hoverDistance) + hoverOffset;
+        Vector3 targetPos = player.transform.position + (cameraTransform.forward * hoverDistance) + hoverOffset;
+
+        /*
+        if (isLadder)
+        {
+            Physics.Raycast(transform.position, Vector3.down, out RaycastHit hit);
+
+            float distanceToGround = Vector3.Distance(transform.position, hit.point);
+
+            if (distanceToGround > transform.lossyScale.y / 2)
+            {
+                targetPos.y -= distanceToGround - transform.lossyScale.y / 2;
+            }
+        }
+        */
+
+        return targetPos;
     }
 
     public string getToolTipText()
