@@ -151,7 +151,7 @@ MonoBehaviour:
   hoverDistance: 1
   hoverSpeed: 200
   hoverDrag: 5
-  hoverOffset: {x: 0, y: 2, z: 0}
+  hoverOffset: {x: 0, y: 1, z: 0}
   pickUpObject: {fileID: 8300000, guid: e409e2966a2cfdd49bc2e00e6d712724, type: 3}
   dropObject: {fileID: 8300000, guid: f3912a9d34f41384fad6d650a04cd298, type: 3}
 --- !u!114 &6562260904486307012

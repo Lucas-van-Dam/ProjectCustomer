@@ -33,7 +33,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 407.419, y: 1.81, z: 674.255}
-  m_LocalScale: {x: 0.6985909, y: 3.513655, z: 0.04783314}
+  m_LocalScale: {x: 0.6985909, y: 2.7, z: 0.04783314}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7122134963197779181}
@@ -152,7 +152,7 @@ MonoBehaviour:
   hoverDistance: 1
   hoverSpeed: 200
   hoverDrag: 5
-  hoverOffset: {x: 0, y: 2, z: 0}
+  hoverOffset: {x: 0, y: 1, z: 0}
   pickUpObject: {fileID: 8300000, guid: e409e2966a2cfdd49bc2e00e6d712724, type: 3}
   dropObject: {fileID: 8300000, guid: f3912a9d34f41384fad6d650a04cd298, type: 3}
 --- !u!114 &1060675232742270674

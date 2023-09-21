@@ -10,7 +10,6 @@ public class NavEnd : MonoBehaviour
         {
             other.GetComponent<ChaseObject>().isFollowActive = false;
             gameObject.SetActive(false);
-            other.GetComponent<Dialogue>().SetStartNodeName("KidStops");
         }
     }
 
