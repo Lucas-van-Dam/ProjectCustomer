@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,8 +8,7 @@ public class PauseMenu : MonoBehaviour
 {
     Movement movement;
 
-    [SerializeField]
-    GameObject menu;
+    [SerializeField] GameObject menu;
 
     private bool isMenuOpen = true;
 
@@ -37,6 +37,13 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
-        SceneManager.LoadScene("Menu Screen Alex", LoadSceneMode.Single);
+        if (Application.isEditor)
+        {
+            EditorApplication.isPlaying = false;
+        }
+        else
+        {
+            Application.Quit();
+        }
     }
 }
