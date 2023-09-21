@@ -5,8 +5,8 @@ using UnityEngine.AI;
 
 public class ChaseObject : MonoBehaviour
 {
-    [SerializeField]
-    Transform target;
+    [HideInInspector]
+    public Transform target;
 
     NavMeshAgent agent;
 
@@ -33,4 +33,6 @@ public class ChaseObject : MonoBehaviour
         else
             agent.destination = transform.position;
     }
+
+    
 }

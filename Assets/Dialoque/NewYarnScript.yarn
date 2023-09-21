@@ -68,6 +68,7 @@ position: 484,-30
 
 *sniff* ok... *sniff*
 
+<<activateNav KID>>
 <<Dissapear MOTHER>>
 ===
 
@@ -79,6 +80,7 @@ Yes...
 
 -> Alright then, let's go and find her. 
     <<Dissapear MOTHER>>
+    <<activateNav KID>>
 -> This place is a maze, good luck! 
 
 ===

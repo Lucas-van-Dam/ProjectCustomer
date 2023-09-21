@@ -8,7 +8,7 @@ public class Dialogue : MonoBehaviour, IInteractable
 {
     [SerializeField] private string startNodeName;
 
-    public void Interact(GameObject interactor)
+    public virtual void Interact(GameObject interactor)
     {
         DialogueManager.RunDialogue(startNodeName);
     }
