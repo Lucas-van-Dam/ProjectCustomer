@@ -8,7 +8,7 @@ public class Dialogue : MonoBehaviour, IInteractable
 {
     [SerializeField] private string startNodeName;
 
-    public void Interact(GameObject interactor)
+    public virtual void Interact(GameObject interactor)
     {
         DialogueManager.RunDialogue(startNodeName);
     }
@@ -18,7 +18,13 @@ public class Dialogue : MonoBehaviour, IInteractable
     {
         Destroy(gameObject);
     }
-    
+
+
+    public void SetStartNodeName(string nodeName)
+    {
+        startNodeName = nodeName;
+    }
+
     public string getToolTipText()
     {
         return "Press E/left click to talk";
