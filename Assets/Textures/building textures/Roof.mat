@@ -37,7 +37,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseColorMap:
-        m_Texture: {fileID: 2800000, guid: 7d1c1cf5f645a374990db0754b2b8197, type: 3}
+        m_Texture: {fileID: 2800000, guid: 285425014f3bb094189fe89dfd02ffa4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BentNormalMap:
@@ -73,15 +73,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 7d1c1cf5f645a374990db0754b2b8197, type: 3}
+        m_Texture: {fileID: 2800000, guid: 285425014f3bb094189fe89dfd02ffa4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: 109d62215d58b25419d1e15e0f44dea2, type: 3}
+        m_Texture: {fileID: 2800000, guid: bc7199a94b3b76942bab7fafd1627865, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
-        m_Texture: {fileID: 2800000, guid: 126147348e614b34fb20942399c95b62, type: 3}
+        m_Texture: {fileID: 2800000, guid: 10801b141aa6e99478355e903a18d9e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMapOS:
@@ -164,7 +164,7 @@ Material:
     - _DoubleSidedNormalMode: 1
     - _DstBlend: 0
     - _EmissiveColorMode: 1
-    - _EmissiveExposureWeight: 1
+    - _EmissiveExposureWeight: 0.3
     - _EmissiveIntensity: 1
     - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
