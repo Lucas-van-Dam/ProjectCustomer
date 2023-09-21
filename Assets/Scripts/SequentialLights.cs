@@ -38,7 +38,7 @@ public class SequentialLights : MonoBehaviour
         foreach (GameObject lightObj in lightSequence[step].lights)
         {
             lightObj.GetComponent<LightElement>()?.PlayAudio(lightTurnOnSound);
-            lightObj.GetComponentInChildren<Light>().gameObject.SetActive(true);
+            lightObj.GetComponentInChildren<Light>(true).gameObject.SetActive(true);
         }
         yield return new WaitForSeconds(interval);
         if (++step >= lightSequence.Count)
