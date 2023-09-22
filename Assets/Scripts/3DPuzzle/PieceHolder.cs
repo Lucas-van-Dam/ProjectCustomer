@@ -20,7 +20,7 @@ public class PieceHolder : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(transform.rotation.x + " " + transform.rotation.y + " " + transform.rotation.z);
+        // Debug.Log(transform.rotation.x + " " + transform.rotation.y + " " + transform.rotation.z);
 
         
 
