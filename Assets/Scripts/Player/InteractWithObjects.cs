@@ -12,6 +12,8 @@ public class InteractWithObjects : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI toolTipText;
 
+    [SerializeField] private Material outlineMat;
+
     IInteractable iinteractable = null;
 
 
@@ -51,7 +53,7 @@ public class InteractWithObjects : MonoBehaviour
             {
                 interactToolTip.enabled = true;
             }
-
+            
         }
 
         if (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0))
