@@ -15,7 +15,7 @@ public class Keypad : MonoBehaviour, IInteractable
     {
         interactor.GetComponent<Movement>().Paralyse();
         keypadUI.SetActive(true);
-        keypadUI.GetComponent<KeypadUI>().Enable(interactor);
+        keypadUI.GetComponent<KeypadUI>().Enable(interactor, this);
 
         if (folderAdded)
         {

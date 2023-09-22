@@ -23,6 +23,7 @@ public class Door : MonoBehaviour, IInteractable
     float baseRotation;
     float targetRotation;
     private AudioSource audioSource;
+    private SphereCollider col;
 
 
     void Start()
@@ -30,10 +31,13 @@ public class Door : MonoBehaviour, IInteractable
         audioSource = GetComponent<AudioSource>();
         baseRotation = hinge.rotation.y;
         targetRotation = baseRotation;
+        col = transform.parent.GetComponentInChildren<SphereCollider>();
     }
 
     public void Interact(GameObject interactor)
     {
+
+
         if (Locked)
         {
             audioSource.PlayOneShot(doorLocked);
@@ -54,6 +58,10 @@ public class Door : MonoBehaviour, IInteractable
 
     void FixedUpdate()
     {
+        if (col != null)
+        {
+            transform.parent.GetComponentInChildren<SphereCollider>().gameObject.GetComponent<Renderer>().sharedMaterial.SetInteger("On", Locked ? 0 : 1);
+        }
         hinge.rotation = Quaternion.Lerp(hinge.rotation, new Quaternion(0, targetRotation, 0, hinge.rotation.w), rotationSpeed);
     }
 

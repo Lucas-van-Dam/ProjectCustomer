@@ -20,6 +20,7 @@ public class FuseBox : MonoBehaviour, IInteractable
         door.Locked = false;
         interacted = true;
         GetComponent<AudioSource>().PlayOneShot(sound);
+        GetComponentInChildren<SphereCollider>().GetComponent<MeshRenderer>().material.SetInt("_On", 1);
     }
 
     public string getToolTipText()

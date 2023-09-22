@@ -20,6 +20,10 @@ public class KeypadUI : MonoBehaviour
     [SerializeField] private FoldersUI folder;
 
     private GameObject interactor;
+
+    private Keypad keypad;
+
+    private bool done = false;
     
     private List<char> currentCombination = new List<char>();
 
@@ -40,15 +44,18 @@ public class KeypadUI : MonoBehaviour
         UpdateScreen();
     }
 
-    public void Enable(GameObject interactor)
+    public void Enable(GameObject interactor, Keypad keypad)
     {
         if (folderPickedUp)
             folder.gameObject.SetActive(true);
         this.interactor = interactor;
+        this.keypad = keypad;
     }
 
     public void KeyPressed(string key)
     {
+        if (done)
+            return;
         PlayKeySound();
         currentCombination.Add(key.ToCharArray().FirstOrDefault());
 
@@ -57,6 +64,7 @@ public class KeypadUI : MonoBehaviour
             if (currentCombination.SequenceEqual(correctCombination))
             {
                 StartCoroutine(QuitScreen());
+                done = true;
             }
             else
             {
@@ -82,12 +90,12 @@ public class KeypadUI : MonoBehaviour
 
     public void QuitKey()
     {
+        keypad.gameObject.GetComponentInChildren<SphereCollider>().GetComponent<MeshRenderer>().material.SetInt("_On", 1);
         audioSource.pitch = defaultPitch;
         audioSource.PlayOneShot(keyPress);
         gameObject.SetActive(false);
         interactor.GetComponent<Movement>().Paralyse();
         folder.gameObject.SetActive(false);
-
     }
 
     private void UpdateScreen()

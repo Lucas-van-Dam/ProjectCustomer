@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,12 +12,24 @@ public class PuzzleLoader : MonoBehaviour, IInteractable
     private AudioClip piecePickUp;
     public int piecesToCollect = 3;
 
+    private bool done;
+
     private AudioSource audioSource;
 
     public void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
+
+    private void Update()
+    {
+        if (puzzleManager.finished && !done)
+        {
+            GetComponentInChildren<SphereCollider>().GetComponent<MeshRenderer>().material.SetInt("_On", 1);
+            done = true;
+        }
+    }
+
     public void Interact(GameObject interactor)
     {
         if (puzzleManager.finished)
