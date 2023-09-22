@@ -1,0 +1,304 @@
+﻿
+
+title: StartMom
+position: -376,85
+---
+<<declare $talkToMother = false >>
+
+My baby! Where is my baby!
+
+-> What's wrong? 
+    <<jump WhatsWrong>>
+-> Could you get out of the way? I need to get through that door.
+    <<jump DontHaveTime>>
+===
+
+title: WhatsWrong
+position: -306,-293
+---
+
+I don't understand... where is my baby? You must find him.
+
+-> Alright, I will try my best to find your child.
+    <<jump DontWorry>>
+-> I don't have time for this... Now let me through.
+    <<jump DontHaveTime>>
+===
+
+title: DontWorry
+position: -42,-553
+---
+
+<<set $talkToMother = true>>
+Please hurry, we don't have much time...
+===
+
+title: DontHaveTime
+position: 137,-249
+---
+
+*She does not seem to want to leave*
+<<set $talkToMother = true>>
+===
+
+
+
+title: StartKid
+position: 193,-64
+---
+
+*Sniff* mama...
+
+
+-> Come with me, I'll bring you back to your mama. <<if $talkToMother == true>>
+    <<jump ComeWithMe>>
+-> What are you hiding out here for?
+    <<jump WhyAreYouCrying>>
+-> Are you looking for your mom? <<if $talkToMother neq true>>
+    <<jump LookingForMom>>
+===
+
+
+
+
+
+title: ComeWithMe
+position: 484,-30
+---
+
+*sniff* ok... *sniff*
+
+<<Dissapear MOTHER>>
+===
+
+title: LookingForMom
+position: -679,-187
+---
+
+Yes... 
+
+-> Alright then, let's go and find her. 
+    <<Dissapear MOTHER>>
+    <<activateNav KID>>
+-> This place is a maze, good luck! 
+
+===
+
+title: KidStops
+position: -679,-187
+---
+
+*sniff* *sniff* where is my mama?
+===
+
+title: WhyAreYouCrying
+position: -33,146
+---
+
+*Keeps crying*
+
+===
+
+title: StartKid2
+position: -655,100
+---
+
+Ya looking for someone? All I been hearing is this kid crying for his mama all night. 
+
+===
+
+title: StartKid3
+position: -838,-414
+---
+
+...
+
+-> Have you seen a child looking for its mother around here? <<if $talkToMother == true>>
+    <<jump SeenAKid>>
+-> Why are you all in these big cages? 
+    <<jump BigCages>>
+
+===
+
+title: SeenAKid
+position: -544,-512
+---
+
+Everyone around here hasn't seen their mother since they arrived. I heard one kid never got to the cages though, it's probably hiding in a corner somewhere.
+
+
+===
+
+title: BigCages
+position: -898,-63
+---
+
+This is where we stay. 
+
+
+===
+title: StartAdult1
+position: -920,331
+---
+
+3...6...2...5...
+
+===
+title: StartAdult2
+position: -676,331
+---
+
+You're... out of your cage... you should not... 
+
+-> Why shouldn't I? 
+    <<jump WhyShouldntI>>
+-> Who's keeping us in these cages? 
+    <<jump WhosKeepingUs>>
+
+===
+
+title: WhyShouldntI
+position: -676,331
+---
+
+...
+
+===
+
+title: WhosKeepingUs
+position: -676,331
+---
+
+...
+
+===
+title: StartAdult3
+position: -457,333
+---
+
+Oh, you're awake. 
+
+-> What am I doing here? Why are we trapped in these cages?
+    <<jump WhatAmIDoingHere>>
+-> Who are you? 
+    <<jump WhoAreYou>>
+
+
+===
+
+title: WhatAmIDoingHere
+position: -311,551
+---
+I don't know any better than you. All I know is we're stuck in here. 
+
+-> I don't understand... 
+    <<jump DontUnderstand>>
+-> How do I get out of here? 
+    <<jump GetOutOfHere>>
+
+===
+
+title: WhoAreYou
+position: -811,641
+---
+
+Me? I'm just a regular who ended up in here. 
+
+-> What am I doing here? Why are we trapped in these cages? 
+    <<jump WhatAmIDoingHere>>
+===
+title: DontUnderstand
+position: -184,839
+---
+
+I wouldn't try to understand if I were you, just be grateful you made it here in one piece. 
+
+-> What do you mean?
+    <<jump WhatDoYouMean>>
+===
+
+title: WhatDoYouMean
+position: -184,839
+---
+
+Wait, you don't remember do you? Well... The road here is always quite rough, most of the others die before making it here. You could say we're the lucky ones, although I'm not sure how true that statement is...
+
+-> Jesus. I need to get the hell out of here, tell me how. 
+    <<jump GetOutOfHere>>
+===
+
+
+title: GetOutOfHere
+position: -542,917
+---
+
+If I knew that, I wouldn't be here talking to you, would I now?
+
+===
+
+
+title: StartBurntMan1
+position: -21,342
+---
+
+It... Hurts...
+
+===
+title: StartBurntMan2
+position: 220,345
+---
+
+It doesn't make sense... 
+
+-> What doesn't make sense? 
+    <<jump WhatSense>>
+-> Do you know where we are? 
+    <<jump WhereAreWe>>
+
+===
+
+title: WhatSense
+position: 223,630
+---
+
+The symbols... it must be a code... 
+
+===
+
+
+title: WhereAreWe
+position: 460,494
+---
+
+...
+
+===
+
+title: StartBurntMan3
+position: 454,339
+---
+
+You're trying to leave this place, aren't you? 
+
+-> I am, you got any idea how to do it? 
+    <<jump GotAnyIdea>>
+
+===
+
+title: GotAnyIdea
+position: 454,339
+---
+
+Don't think you're the first one, several have tried before you. One actually managed to figure out the code I heard, never saw them again though. 
+
+===
+
+title: StartBurntMan4
+position: 680,342
+---
+
+You're out of you cage...? It's pointless. There is no way out. 
+
+===
+
+

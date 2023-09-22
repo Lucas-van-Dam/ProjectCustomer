@@ -1,0 +1,14 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu Screen/Menu Screen Alex.unity
+    guid: ebe4803521a644040ae21a636cd986d9
+  - enabled: 1
+    path: Assets/Scenes/Final/Final Product.unity
+    guid: 82c57e043a5249b4dbd93f4daa08fc40
+  m_configObjects: {}
