@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class KeyPuzzleManager : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class KeyPuzzleManager : MonoBehaviour
     GameObject puzzleCam;
 
     [SerializeField]
-    Door door;
+    Door[] doors;
 
     [SerializeField]
     Movement player;
@@ -50,7 +51,11 @@ public class KeyPuzzleManager : MonoBehaviour
         pieceHolder.activated = false;
 
         player.Paralyse();
-        door.Locked = false;
+        foreach (var door in doors)
+        {
+            door.Locked = false;
+        }
+        
 
         playerCam.enabled = true;
         puzzleCam.SetActive(false);
